@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<overrides>	
+	<icon labelID="13009">DefaultQuit.png</icon>
+	<icon labelID="20151">DefaultQuit.png</icon>
+	<icon labelID="13011">DefaultSleep.png</icon>
+	<icon labelID="13010">DefaultSleep.png</icon>
+	<icon labelID="13013">DefaultReboot.png</icon>
+	<icon labelID="13016">DefaultShutdown.png</icon>
+	<icon labelID="13005">DefaultShutdown.png</icon>
+	<icon labelID="19026">DefaultTimer.png</icon>
+	<icon labelID="20151">DefaultCancel_timer.png</icon>
+	<icon labelID="360">DefaultScreensaver.png</icon>
+	<icon labelID="20045">DefaultMastermode.png</icon>
+	<icon labelID="settings">DefaultSettings.png</icon>
+	<groupoverride group="shutdown" condition="true">Close</groupoverride>
+</overrides>

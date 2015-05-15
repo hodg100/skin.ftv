@@ -1,4 +1,8 @@
-# Windows image file caches
+# Image folder
+AFTV/
+
+# Folder config file
+Desktop.ini# Windows image file caches
 Thumbs.db
 ehthumbs.db
 
