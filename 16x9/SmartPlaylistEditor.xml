@@ -17,7 +17,7 @@
 				<texture>dialogs/smart_playlist_editor_back.png</texture>
 			</control>
 			<!-- Heading -->
-			<control type="label">
+			<control type="label" id="2">
 				<left>40</left>
 				<top>14</top>
 				<height>30</height>

@@ -850,6 +850,36 @@
 				<label>VisualisationPresetList.xml</label>
 				<visible>Window.IsVisible(VisualisationPresetList.xml)</visible>
 			</control>
+			<control type="label">
+				<width>780</width>
+				<height>21</height>
+				<textcolor>FFFF0000</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<font>font13</font>
+				<align>left</align>
+				<label>script-skinshortcuts.xml</label>
+				<visible>Window.IsVisible(script-skinshortcuts.xml)</visible>
+			</control>
+			<control type="label">
+				<width>780</width>
+				<height>21</height>
+				<textcolor>FFFF0000</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<font>font13</font>
+				<align>left</align>
+				<label>script-ExtendedInfo Script-DialogInfo.xml</label>
+				<visible>Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml)</visible>
+			</control>
+			<control type="label">
+				<width>780</width>
+				<height>21</height>
+				<textcolor>FFFF0000</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<font>font13</font>
+				<align>left</align>
+				<label>script-ExtendedInfo Script-DialogVideoInfo.xml</label>
+				<visible>Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)</visible>
+			</control>
 		</control>
 		<!-- Control label -->
 		<control type="label">

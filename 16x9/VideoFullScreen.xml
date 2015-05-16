@@ -79,7 +79,7 @@
 				<height>11</height>
 				<reveal>true</reveal>
 				<info>Player.ProgressCache</info>
-				<texturebg border="5" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
+				<texturebg border="4">osd/progress_back.png</texturebg>
 				<lefttexture>-</lefttexture>
 				<midtexture border="4">osd/progress_cache.png</midtexture>
 				<righttexture>-</righttexture>
@@ -93,7 +93,7 @@
 				<height>11</height>
 				<reveal>true</reveal>
 				<info>Player.Progress</info>
-				<texturebg border="4">osd/progress_back.png</texturebg>
+				<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
 				<lefttexture>-</lefttexture>
 				<midtexture border="4">osd/progress_bar.png</midtexture>
 				<righttexture>-</righttexture>

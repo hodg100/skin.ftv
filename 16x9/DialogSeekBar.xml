@@ -85,7 +85,7 @@
 					<height>120</height>
 					<texture>osd/mask.png</texture>
 				</control>
-				<!--  Progress bar -->
+				<!--  Cache bar -->
 				<control type="progress">
 					<left>92</left>
 					<bottom>93</bottom>
@@ -94,6 +94,20 @@
 					<reveal>true</reveal>
 					<info>Player.ProgressCache</info>
 					<texturebg border="4">osd/progress_back.png</texturebg>
+					<lefttexture>-</lefttexture>
+					<midtexture border="4">osd/progress_cache.png</midtexture>
+					<righttexture>-</righttexture>
+					<overlaytexture>-</overlaytexture>
+				</control>
+				<!--  Progress bar -->
+				<control id="2" type="progress">
+					<left>92</left>
+					<bottom>93</bottom>
+					<width>1735</width>
+					<height>11</height>
+					<reveal>true</reveal>
+					<info>Player.Progress</info>
+					<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
 					<lefttexture>-</lefttexture>
 					<midtexture border="4">osd/progress_bar.png</midtexture>
 					<righttexture>-</righttexture>
@@ -200,7 +214,7 @@
 					<height>11</height>
 					<reveal>true</reveal>
 					<info>Player.Progress</info>
-					<texturebg border="5" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
+					<texturebg border="4" colordiffuse="00ffffff">osd/progress_back.png</texturebg>
 					<lefttexture>-</lefttexture>
 					<midtexture border="4">osd/progress_bar.png</midtexture>
 					<righttexture>-</righttexture>

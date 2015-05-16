@@ -33,34 +33,69 @@
 				<height>111</height>
 				<texture>dialogs/notification_volume.png</texture>
 			</control>
-			<!-- Heading -->
-			<control type="label">
-				<left>160</left>
-				<top>42</top>
-				<width>552</width>
-				<height>31</height>
-				<font>Light31</font>
-				<textcolor>fff6f6f6</textcolor>
-				<label>13376</label>
+			<control type="group">
+				<visible>!player.passthrough</visible>
+				<!-- Heading -->
+				<control type="label">
+					<left>160</left>
+					<top>42</top>
+					<width>552</width>
+					<height>31</height>
+					<font>Light31</font>
+					<textcolor>fff6f6f6</textcolor>
+					<label>13376</label>
+				</control>
+				<!-- Details -->
+				<control type="label">
+					<left>160</left>
+					<top>47</top>
+					<width>552</width>
+					<height>26</height>
+					<align>right</align>
+					<font>Light26</font>
+					<textcolor>fffbbb45</textcolor>
+					<label>$INFO[Control.GetLabel(404),,%]</label>
+				</control>
+				<!-- Progress -->
+				<control id="404" type="progress">
+					<left>160</left>
+					<top>104</top>
+					<width>552</width>
+					<height>11</height>
+					<info>player.volume</info>
+				</control>
 			</control>
-			<!-- Details -->
-			<control type="label">
-				<left>160</left>
-				<top>47</top>
-				<width>552</width>
-				<height>26</height>
-				<align>right</align>
-				<font>Light26</font>
-				<textcolor>fffbbb45</textcolor>
-				<label>$INFO[Control.GetLabel(404),,%]</label>
-			</control>
-			<!-- Progress -->
-			<control id="404" type="progress">
-				<left>160</left>
-				<top>104</top>
-				<width>552</width>
-				<height>11</height>
-				<info>player.volume</info>
+			<control type="group">
+				<visible>!player.passthrough</visible>
+				<!-- Heading -->
+				<control type="label">
+					<left>160</left>
+					<top>42</top>
+					<width>552</width>
+					<height>31</height>
+					<font>Light31</font>
+					<textcolor>fff6f6f6</textcolor>
+					<label>13376</label>
+				</control>
+				<!-- Details -->
+				<control type="label">
+					<left>160</left>
+					<top>47</top>
+					<width>552</width>
+					<height>26</height>
+					<align>right</align>
+					<font>Light26</font>
+					<textcolor>fffbbb45</textcolor>
+					<label>29802</label>
+				</control>
+				<!-- Progress -->
+				<control id="404" type="progress">
+					<left>160</left>
+					<top>104</top>
+					<width>552</width>
+					<height>11</height>
+					<info>player.volume</info>
+				</control>
 			</control>
 		</control>
 	</controls>
