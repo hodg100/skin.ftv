@@ -217,7 +217,8 @@
 				<width>2800</width>
 				<height>1400</height>
 				<itemgap>0</itemgap>
-				<ondown>8</ondown>
+				<onleft>9001</onleft>
+				<onright>9001</onright>
 				<orientation>vertical</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<!-- Plot -->
@@ -241,12 +242,14 @@
 					<top>-34</top>
 					<width>37</width>
 					<height>23</height>
-					<onleft>7000</onleft>
-					<onright>8</onright>
 					<onclick>RunScript(script.toolbox,info=textviewer,header=,text='"$VAR[SearchPlot]"')</onclick>
 					<texturefocus>views/more_fo.png</texturefocus>
 					<texturenofocus>views/more_nf.png</texturenofocus>
 					<visible>Control.IsVisible(96)</visible>
+				</control>
+				<control id="3004" type="button">
+					<onfocus>SetFocus(9001)</onfocus>
+					<visible allowhiddenfocus="true">false</visible>
 				</control>
 				<!-- More button -->
 				<control type="image">
@@ -475,7 +478,8 @@
 				<width>2800</width>
 				<height>1400</height>
 				<itemgap>0</itemgap>
-				<ondown>8</ondown>
+				<onleft>9001</onleft>
+				<onright>9001</onright>
 				<orientation>vertical</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<!-- Plot -->
@@ -490,7 +494,7 @@
 					<visible>!IsEmpty(Container(100).ListItem.Property(Artist_Description)) | !IsEmpty(Container(100).ListItem.Property(Album_Description))</visible>
 				</control>
 				<control id="3003" type="button">
-					<onfocus>Close</onfocus>
+					<onfocus>SetFocus(9001)</onfocus>
 					<visible allowhiddenfocus="true">false</visible>
 				</control>
 				<!-- More button -->
@@ -499,12 +503,14 @@
 					<top>-34</top>
 					<width>37</width>
 					<height>23</height>
-					<onleft>7000</onleft>
-					<onright>8</onright>
 					<onclick>RunScript(script.toolbox,info=textviewer,header=,text='"$VAR[SearchPlot]"')</onclick>
 					<texturefocus>views/more_fo.png</texturefocus>
 					<texturenofocus>views/more_nf.png</texturenofocus>
 					<visible>Control.IsVisible(96)</visible>
+				</control>
+				<control id="3004" type="button">
+					<onfocus>9001</onfocus>
+					<visible allowhiddenfocus="true">false</visible>
 				</control>
 				<!-- More button -->
 				<control type="image">
@@ -523,7 +529,7 @@
 			<animation effect="fade" end="100" start="0" time="200" delay="400">WindowOpen</animation>
 			<animation effect="slide" end="-50,0" start="0,0" time="0" condition="Control.IsVisible(160) | Control.IsVisible(170) | Control.IsVisible(180)">Conditional</animation>
 			<!-- Button grouplist -->
-			<control id="190" type="grouplist">
+			<control id="9001" type="grouplist">
 				<left>-2</left>
 				<top>409</top>
 				<width>1620</width>
