@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- textviewer -->
-	<zorder>1</zorder>
+	<zorder>2</zorder>
 	<defaultcontrol always="true">3000</defaultcontrol>
 	<controls>
+		<control id="5" type="textbox">
+			<font>-</font>
+		</control>
+		<!-- Heading -->
+		<control id="1" type="label">
+			<font>-</font>
+		</control>
 		<!-- Background -->
 		<include>DialogTextBackgroundImage</include>
 		<control type="group">
@@ -23,14 +30,6 @@
 				<height>760</height>
 				<texture border="4,7,4,7">views/text_viewer_background.png</texture>
 			</control>
-			<!-- Heading -->
-			<control id="1" type="label">
-				<left>150</left>
-				<top>96</top>
-				<width>1620</width>
-				<height>72</height>
-				<font>-</font>
-			</control>
 			<!-- Arrow up -->
 			<control type="image">
 				<left>942</left>
@@ -42,8 +41,8 @@
 				<animation delay="80" effect="fade" end="100" start="0" time="120">Visible</animation>
 				<animation delay="80" effect="fade" end="0" start="100" time="120">Hidden</animation>
 			</control>
-			<!-- Plot -->
-			<control id="5" type="textbox">
+			<!-- Text -->
+			<control id="10" type="textbox">
 				<centerleft>50%</centerleft>
 				<centertop>50%</centertop>
 				<width>788</width>
@@ -53,6 +52,7 @@
 				<pagecontrol>3000</pagecontrol>
 				<autoscroll>false</autoscroll>
 				<textcolor>ffdadada</textcolor>
+				<label>[B][COLOR ffffffff]$INFO[Control.GetLabel(1),,[CR]][/B][/COLOR]$INFO[Control.GetLabel(5)]</label>
 			</control>
 			<!-- Arrow down -->
 			<control type="image">
@@ -61,7 +61,7 @@
 				<width>36</width>
 				<height>20</height>
 				<texture>views/arrow_down.png</texture>
-				<visible>Control.IsVisible(3000) + !StringCompare(Container(5).CurrentPage,Container(5).NumPages)</visible>
+				<visible>Control.IsVisible(3000) + !StringCompare(Container(10).CurrentPage,Container(10).NumPages)</visible>
 				<animation delay="80" effect="fade" end="100" start="0" time="120">Visible</animation>
 				<animation delay="80" effect="fade" end="0" start="100" time="120">Hidden</animation>
 			</control>

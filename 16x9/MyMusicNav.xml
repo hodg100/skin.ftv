@@ -140,25 +140,6 @@
 						<visible>!StringCompare(ListItem.Label,..) + !Control.IsVisible(54)</visible>
 						<visible>Container.Content(artists) | Container.Content(albums)</visible>
 					</control>
-					<control id="20" type="togglebutton">
-						<width>154</width>
-						<height>100</height>
-						<onup>50</onup>
-						<ondown>3000</ondown>
-						<onclick>SetFocus(50)</onclick>
-						<font>Med24</font>
-						<label>Update[CR]Library</label>
-						<altlabel>Stop[CR]scanning</altlabel>
-						<textoffsetx>20</textoffsetx>
-						<textcolor>ffdadada</textcolor>
-						<focusedcolor>ff222222</focusedcolor>
-						<visible>Control.IsEnabled(20)</visible>
-						<usealttexture>Library.IsScanningMusic</usealttexture>
-						<texturefocus border="3,5,6,8">views/button_fo.png</texturefocus>
-						<texturenofocus border="3,3,6,6">views/button_nf.png</texturenofocus>
-						<alttexturefocus border="3,5,6,8">views/button_fo.png</alttexturefocus>
-						<alttexturenofocus border="3,3,6,6">views/button_nf.png</alttexturenofocus>
-					</control>
 					<control id="1004" type="button">
 						<width>134</width>
 						<height>100</height>
@@ -202,6 +183,25 @@
 						<texturefocus border="3,5,6,8">views/button_fo.png</texturefocus>
 						<texturenofocus border="3,3,6,6">views/button_nf.png</texturenofocus>
 					</control>
+					<control id="20" type="togglebutton">
+						<width>154</width>
+						<height>100</height>
+						<onup>50</onup>
+						<ondown>3000</ondown>
+						<onclick>SetFocus(50)</onclick>
+						<font>Med24</font>
+						<label>Update[CR]Library</label>
+						<altlabel>Stop[CR]scanning</altlabel>
+						<textoffsetx>20</textoffsetx>
+						<textcolor>ffdadada</textcolor>
+						<focusedcolor>ff222222</focusedcolor>
+						<visible>Control.IsEnabled(20)</visible>
+						<usealttexture>Library.IsScanningMusic</usealttexture>
+						<texturefocus border="3,5,6,8">views/button_fo.png</texturefocus>
+						<texturenofocus border="3,3,6,6">views/button_nf.png</texturenofocus>
+						<alttexturefocus border="3,5,6,8">views/button_fo.png</alttexturefocus>
+						<alttexturenofocus border="3,3,6,6">views/button_nf.png</alttexturenofocus>
+					</control>
 				</control>
 				<!-- Details -->
 				<control type="group">
@@ -243,11 +243,20 @@
 						<ondown>noop</ondown>
 						<onleft>50</onleft>
 						<onright>50</onright>
-						<onclick>SetFocus(4000)</onclick>
+						<onclick>RunScript(script.toolbox,info=textviewer,header=$INFO[ListItem.Label],text='"$INFO[ListItem.Label2]"')</onclick>
 						<visible>Control.IsVisible(98)</visible>
 						<texturefocus>views/more_fo.png</texturefocus>
 						<texturenofocus>views/more_nf.png</texturenofocus>
-						<visible>!Control.HasFocus(4000)</visible>
+						<visible>!Window.IsVisible(textviewer)</visible>
+					</control>
+					<!-- More button -->
+					<control type="image">
+						<left>1194</left>
+						<top>192</top>
+						<width>37</width>
+						<height>23</height>
+						<texture>views/more_nf.png</texture>
+						<visible>Window.IsVisible(textviewer)</visible>
 					</control>
 				</control>
 				<!-- Time -->
@@ -299,28 +308,6 @@
 						<texturefocus border="3,5,6,8">views/button_fo.png</texturefocus>
 						<texturenofocus border="3,3,6,6">views/button_nf.png</texturenofocus>
 						<visible>!StringCompare(ListItem.Label,..)</visible>
-					</control>
-					<control id="20" type="togglebutton">
-						<left>247</left>
-						<width>239</width>
-						<height>100</height>
-						<onleft>1002</onleft>
-						<onright>50</onright>
-						<onup>50</onup>
-						<ondown>1004</ondown>
-						<onclick>SetFocus(50)</onclick>
-						<font>Med24</font>
-						<label>Update[CR]Library</label>
-						<altlabel>Stop[CR]scanning</altlabel>
-						<textoffsetx>20</textoffsetx>
-						<textcolor>ffdadada</textcolor>
-						<focusedcolor>ff222222</focusedcolor>
-						<visible>Control.IsEnabled(20)</visible>
-						<usealttexture>Library.IsScanningMusic</usealttexture>
-						<texturefocus border="3,5,6,8">views/button_fo.png</texturefocus>
-						<texturenofocus border="3,3,6,6">views/button_nf.png</texturenofocus>
-						<alttexturefocus border="3,5,6,8">views/button_fo.png</alttexturefocus>
-						<alttexturenofocus border="3,3,6,6">views/button_nf.png</alttexturenofocus>
 					</control>
 					<control id="1003" type="button">
 						<top>110</top>
@@ -375,6 +362,28 @@
 						<texturefocus border="3,5,6,8">views/button_fo.png</texturefocus>
 						<texturenofocus border="3,3,6,6">views/button_nf.png</texturenofocus>
 					</control>
+					<control id="20" type="togglebutton">
+						<left>247</left>
+						<width>239</width>
+						<height>100</height>
+						<onleft>1002</onleft>
+						<onright>50</onright>
+						<onup>50</onup>
+						<ondown>1004</ondown>
+						<onclick>SetFocus(50)</onclick>
+						<font>Med24</font>
+						<label>Update[CR]Library</label>
+						<altlabel>Stop[CR]scanning</altlabel>
+						<textoffsetx>20</textoffsetx>
+						<textcolor>ffdadada</textcolor>
+						<focusedcolor>ff222222</focusedcolor>
+						<visible>Control.IsEnabled(20)</visible>
+						<usealttexture>Library.IsScanningMusic</usealttexture>
+						<texturefocus border="3,5,6,8">views/button_fo.png</texturefocus>
+						<texturenofocus border="3,3,6,6">views/button_nf.png</texturenofocus>
+						<alttexturefocus border="3,5,6,8">views/button_fo.png</alttexturefocus>
+						<alttexturenofocus border="3,3,6,6">views/button_nf.png</alttexturenofocus>
+					</control>
 				</control>
 				<!-- Details -->
 				<control type="group">
@@ -416,11 +425,20 @@
 						<ondown>noop</ondown>
 						<onleft>50</onleft>
 						<onright>50</onright>
-						<onclick>SetFocus(4000)</onclick>
+						<onclick>RunScript(script.toolbox,info=textviewer,header=$INFO[ListItem.Label],text='"$INFO[ListItem.Label2]"')</onclick>
 						<visible>Control.IsVisible(98)</visible>
 						<texturefocus>views/more_fo.png</texturefocus>
 						<texturenofocus>views/more_nf.png</texturenofocus>
-						<visible>!Control.HasFocus(4000)</visible>
+						<visible>!Window.IsVisible(textviewer)</visible>
+					</control>
+					<!-- More button -->
+					<control type="image">
+						<left>1194</left>
+						<top>192</top>
+						<width>37</width>
+						<height>23</height>
+						<texture>views/more_nf.png</texture>
+						<visible>Window.IsVisible(textviewer)</visible>
 					</control>
 				</control>
 				<!-- Time -->
@@ -436,85 +454,6 @@
 					<label>$INFO[ListItem.Label2]</label>
 					<visible>Window.IsVisible(musicplaylist)</visible>
 				</control>
-			</control>
-		</control>
-		<!-- Background -->
-		<control type="image">
-			<include>FullscreenDimensions</include>
-			<texture>dialogs/DialogBackground.png</texture>
-			<visible>Control.HasFocus(4000)</visible>
-			<animation effect="fade" end="100" start="0" time="200">Visible</animation>
-			<animation delay="100" effect="fade" end="0" start="100" time="200">Hidden</animation>
-		</control>
-		<control type="group">
-			<visible>Control.HasFocus(4000)</visible>
-			<animation reversible="true" type="Visible">
-				<effect center="auto" easing="inout" end="100" start="92" time="120" tween="sine" type="zoom" />
-				<effect easing="inout" end="100" start="0" time="120" tween="sine" type="fade" />
-			</animation>
-			<animation reversible="true" type="Hidden">
-				<effect center="auto" easing="inout" end="92" start="100" time="120" tween="sine" type="zoom" />
-				<effect easing="inout" end="0" start="100" time="120" tween="sine" type="fade" />
-			</animation>
-			<!-- Plot background -->
-			<control type="image">
-				<centerleft>50%</centerleft>
-				<centertop>50%</centertop>
-				<width>973</width>
-				<height>760</height>
-				<texture border="4,7,4,7">views/text_viewer_background.png</texture>
-			</control>
-			<!-- Arrow up -->
-			<control type="image">
-				<left>942</left>
-				<top>216</top>
-				<width>36</width>
-				<height>20</height>
-				<texture>views/arrow_up.png</texture>
-				<visible>Control.IsVisible(4000) + IntegerGreaterThan(Container(4001).CurrentPage,1)</visible>
-				<animation delay="80" effect="fade" end="100" start="0" time="120">Visible</animation>
-				<animation delay="80" effect="fade" end="0" start="100" time="120">Hidden</animation>
-			</control>
-			<!-- Plot -->
-			<control id="4001" type="textbox">
-				<centerleft>50%</centerleft>
-				<centertop>50%</centertop>
-				<width>788</width>
-				<height>454</height>
-				<align>left</align>
-				<font>Light36</font>
-				<pagecontrol>4000</pagecontrol>
-				<autoscroll>false</autoscroll>
-				<textcolor>ffdadada</textcolor>
-				<label>[COLOR ffffffff][B]$INFO[ListItem.Label][/B][CR][/COLOR]$INFO[ListItem.Label2]</label>
-			</control>
-			<!-- Arrow down -->
-			<control type="image">
-				<left>942</left>
-				<top>844</top>
-				<width>36</width>
-				<height>20</height>
-				<texture>views/arrow_down.png</texture>
-				<visible>Control.IsVisible(4000) + !StringCompare(Container(4001).CurrentPage,Container(4001).NumPages)</visible>
-				<animation delay="80" effect="fade" end="100" start="0" time="120">Visible</animation>
-				<animation delay="80" effect="fade" end="0" start="100" time="120">Hidden</animation>
-			</control>
-			<!-- Scrollbar -->
-			<control id="4000" type="scrollbar">
-				<left>1394</left>
-				<centertop>50%</centertop>
-				<width>8</width>
-				<height>446</height>
-				<onup>noop</onup>
-				<ondown>noop</ondown>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onback>50</onback>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
-				<visible allowhiddenfocus="true">Control.HasFocus(4000)</visible>
-				<texturesliderbarfocus border="3">common/Scrollbar.png</texturesliderbarfocus>
-				<animation condition="System.IdleTime(1)" effect="fade" end="0" start="100" time="200">Conditional</animation>
 			</control>
 		</control>
 		<!-- Background -->

@@ -31,7 +31,8 @@
 				<top>374</top>
 				<width>480</width>
 				<height>35</height>
-				<onup>Close</onup>
+				<onup condition="!Control.IsVisible(96)">Close</onup>
+				<onup condition="Control.IsVisible(96)">3002</onup>
 				<ondown>7001</ondown>
 				<onleft>Close</onleft>
 				<onright>9000</onright>
@@ -80,7 +81,6 @@
 			<control type="group">
 				<top>57</top>
 				<height>36</height>
-				<itemgap>20</itemgap>
 				<visible>Container.Content(Artists)</visible>
 				<animation condition="Control.HasFocus(1500) | Control.HasFocus(2500)" effect="fade" end="0" start="100" time="0">Conditional</animation>
 				<animation condition="!Control.HasFocus(1500) + !Control.HasFocus(2500)" delay="200" effect="fade" end="100" start="0" time="80">Conditional</animation>
@@ -108,7 +108,6 @@
 			<control type="group">
 				<top>57</top>
 				<height>36</height>
-				<itemgap>20</itemgap>
 				<visible>Container.Content(Albums)</visible>
 				<animation condition="Control.HasFocus(1500) | Control.HasFocus(2500)" effect="fade" end="0" start="100" time="0">Conditional</animation>
 				<animation condition="!Control.HasFocus(1500) + !Control.HasFocus(2500)" delay="200" effect="fade" end="100" start="0" time="80">Conditional</animation>
@@ -136,7 +135,6 @@
 			<control type="group">
 				<top>97</top>
 				<height>36</height>
-				<itemgap>20</itemgap>
 				<animation condition="Control.HasFocus(1500) | Control.HasFocus(2500)" effect="fade" end="0" start="100" time="0">Conditional</animation>
 				<animation condition="!Control.HasFocus(1500) + !Control.HasFocus(2500)" delay="200" effect="fade" end="100" start="0" time="80">Conditional</animation>
 				<control type="label">
@@ -163,7 +161,6 @@
 			<control type="group">
 				<top>137</top>
 				<height>36</height>
-				<itemgap>20</itemgap>
 				<visible>Container.Content(Artists)</visible>
 				<animation condition="Control.HasFocus(1500) | Control.HasFocus(2500)" effect="fade" end="0" start="100" time="0">Conditional</animation>
 				<animation condition="!Control.HasFocus(1500) + !Control.HasFocus(2500)" delay="200" effect="fade" end="100" start="0" time="80">Conditional</animation>
@@ -191,7 +188,6 @@
 			<control type="group">
 				<top>137</top>
 				<height>36</height>
-				<itemgap>20</itemgap>
 				<visible>Container.Content(Albums)</visible>
 				<animation condition="Control.HasFocus(1500) | Control.HasFocus(2500)" effect="fade" end="0" start="100" time="0">Conditional</animation>
 				<animation condition="!Control.HasFocus(1500) + !Control.HasFocus(2500)" delay="200" effect="fade" end="100" start="0" time="80">Conditional</animation>
@@ -219,7 +215,6 @@
 			<control type="group">
 				<top>183</top>
 				<height>36</height>
-				<itemgap>20</itemgap>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<visible>Container.Content(albums) + !IsEmpty(ListItem.Rating)</visible>

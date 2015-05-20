@@ -54,7 +54,7 @@
 		<label2>Custom shortcut</label2>
 		<icon>DefaultProgram.png</icon>
 		<thumb />
-		<action>ActivateWindow(Programs,addons://sources/executable/)</action>
+		<action>ActivateWindow(Programs)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID>pictures</defaultID>

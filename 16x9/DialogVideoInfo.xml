@@ -67,7 +67,7 @@
 				<width>90</width>
 				<height>90</height>
 				<texture>views/OverlayWatched.png</texture>
-				<visible>StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
+				<visible>IntegerGreaterThan(ListItem.PlayCount,0)</visible>
 			</control>
 			<control type="image">
 				<top>240</top>
@@ -103,13 +103,14 @@
 				<width>320</width>
 				<height>8</height>
 				<texture border="2">views/ProgressBar.png</texture>
-				<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable</visible>
+				<visible>IntegerGreaterThan(ListItem.PlayCount,0) + !ListItem.IsResumable</visible>
 			</control>
 			<control id="7000" type="button">
 				<top>518</top>
 				<width>480</width>
 				<height>35</height>
-				<onup>Close</onup>
+				<onup condition="!Control.IsVisible(96)">Close</onup>
+				<onup condition="Control.IsVisible(96)">3002</onup>
 				<ondown>7001</ondown>
 				<onleft>Close</onleft>
 				<onright>50</onright>
@@ -194,7 +195,7 @@
 					<visible>!IsEmpty(ListItem.SubtitleLanguage)</visible>
 				</control>
 				<include>Rating_TV</include>
-				<include condition="IsEmpty(Skin.String(RatingCountry))">Rating_MPAA</include>
+				<include condition="IsEmpty(Skin.String(RatingCountry)) | Stringcompare(Skin.String(RatingCountry),US)">Rating_MPAA</include>
 				<include condition="Stringcompare(Skin.String(RatingCountry),UK)">Rating_BBFC</include>
 				<include condition="Stringcompare(Skin.String(RatingCountry),Germany)">Rating_FSK</include>
 			</control>
@@ -414,6 +415,7 @@
 					<focusedcolor>ff222222</focusedcolor>
 					<visible>!IsEmpty(ListItem.Trailer)</visible>
 					<texturefocus border="3,5,6,8">views/button_fo.png</texturefocus>
+					<texturenofocus border="3,3,6,6">views/button_nf.png</texturenofocus>
 				</control>
 				<!-- Refresh Button -->
 				<control id="6" type="button">

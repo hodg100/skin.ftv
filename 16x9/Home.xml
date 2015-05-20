@@ -99,7 +99,7 @@
 			<left>84</left>
 			<top>111</top>
 			<width>284</width>
-			<height>975</height>
+			<height>942</height>
 			<onup>noop</onup>
 			<ondown>noop</ondown>
 			<onleft>noop</onleft>
@@ -110,7 +110,9 @@
 			<onright condition="StringCompare(Container(9000).ListItem.Label,TV Shows) + StringCompare(Container(200).NumItems,1)">ActivateWindow(Videos,special://skin/extras/video/RecentlyUpdatedTVShows.xsp,return)</onright>
 			<onright condition="StringCompare(Container(9000).ListItem.Label,Music) + IntegerGreaterThan(Container(300).NumItems,1)">SetFocus(300)</onright>
 			<onright condition="StringCompare(Container(9000).ListItem.Label,Music) + StringCompare(Container(300).NumItems,1)">ActivateWindow(MusicLibrary,special://skin/extras/music/YourAlbums.xsp,return)</onright>
-			<onright condition="!StringCompare(Container(9000).ListItem.Label,Movies) + !StringCompare(Container(9000).ListItem.Label,TV Shows) + !StringCompare(Container(9000).ListItem.Label,Music)">Select</onright>
+			<onright condition="StringCompare(Container(9000).ListItem.Label,Apps)">ActivateWindow(Programs,addons://sources/executable/,return)</onright>
+			<onright condition="StringCompare(Container(9000).ListItem.Label,Photos)">ActivateWindow(Pictures,addons://sources/image,return)</onright>
+			<onright condition="!StringCompare(Container(9000).ListItem.Label,Movies) + !StringCompare(Container(9000).ListItem.Label,TV Shows) + !StringCompare(Container(9000).ListItem.Label,Music) + !StringCompare(Container(9000).ListItem.Label,Apps) + !StringCompare(Container(9000).ListItem.Label,Photos)">Select</onright>
 			<orientation>vertical</orientation>
 			<scrolltime easing="out" tween="sine">180</scrolltime>
 			<include>WindowHomeFadeAnimation</include>
@@ -203,7 +205,7 @@
 		</control>
 		<control type="image">
 			<left>0</left>
-			<top>-746</top>
+			<top>-706</top>
 			<width>1920</width>
 			<height>1858</height>
 			<aspectratio>stretch</aspectratio>
@@ -220,6 +222,16 @@
 			<animation condition="Container(9000).Row(9)" effect="slide" end="0,585" time="200">Conditional</animation>
 			<animation condition="Container(9000).Row(10)" effect="slide" end="0,650" time="200">Conditional</animation>
 			<animation condition="Container(9000).Row(11)" effect="slide" end="0,715" time="200">Conditional</animation>
+			<animation condition="StringCompare(Container(9000).NumItems,10)" effect="slide" end="0,33" time="0">Conditional</animation>
+			<animation condition="StringCompare(Container(9000).NumItems,9)" effect="slide" end="0,66" time="0">Conditional</animation>
+			<animation condition="StringCompare(Container(9000).NumItems,8)" effect="slide" end="0,99" time="0">Conditional</animation>
+			<animation condition="StringCompare(Container(9000).NumItems,7)" effect="slide" end="0,132" time="0">Conditional</animation>
+			<animation condition="StringCompare(Container(9000).NumItems,6)" effect="slide" end="0,165" time="0">Conditional</animation>
+			<animation condition="StringCompare(Container(9000).NumItems,5)" effect="slide" end="0,198" time="0">Conditional</animation>
+			<animation condition="StringCompare(Container(9000).NumItems,4)" effect="slide" end="0,231" time="0">Conditional</animation>
+			<animation condition="StringCompare(Container(9000).NumItems,3)" effect="slide" end="0,264" time="0">Conditional</animation>
+			<animation condition="StringCompare(Container(9000).NumItems,2)" effect="slide" end="0,297" time="0">Conditional</animation>
+			<animation condition="StringCompare(Container(9000).NumItems,1)" effect="slide" end="0,330" time="0">Conditional</animation>
 		</control>
 		<!-- Movie widgets -->
 		<control id="100" type="fixedlist">
@@ -229,7 +241,7 @@
 			<height>1500</height>
 			<onup condition="!Window.IsVisible(1101)">SetProperty(BounceUp,1,Home)</onup>
 			<onup>noop</onup>
-			<ondown condition="!Window.IsVisible(1101)">SetProperty(BounceUp,1,Home)</ondown>
+			<ondown condition="!Window.IsVisible(1101)">SetProperty(BounceDown,1,Home)</ondown>
 			<ondown>noop</ondown>
 			<onleft>9000</onleft>
 			<onright>Select</onright>
@@ -933,7 +945,7 @@
 			<height>1500</height>
 			<onup condition="!Window.IsVisible(1101)">SetProperty(BounceUp,1,Home)</onup>
 			<onup>noop</onup>
-			<ondown condition="!Window.IsVisible(1101)">SetProperty(BounceUp,1,Home)</ondown>
+			<ondown condition="!Window.IsVisible(1101)">SetProperty(BounceDown,1,Home)</ondown>
 			<ondown>noop</ondown>
 			<onleft>9000</onleft>
 			<onright>Select</onright>
@@ -2067,7 +2079,7 @@
 			<height>1500</height>
 			<onup condition="!Window.IsVisible(1101)">SetProperty(BounceUp,1,Home)</onup>
 			<onup>noop</onup>
-			<ondown condition="!Window.IsVisible(1101)">SetProperty(BounceUp,1,Home)</ondown>
+			<ondown condition="!Window.IsVisible(1101)">SetProperty(BounceDown,1,Home)</ondown>
 			<ondown>noop</ondown>
 			<onleft>9000</onleft>
 			<onright>Select</onright>
@@ -2975,7 +2987,7 @@
 					<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
 				</control>
 			</focusedlayout>
-			<content target="pictures">pictures://</content>
+			<content target="pictures">addons://sources/image</content>
 		</control>
 		<!-- Weather widget -->
 		<control type="fixedlist">

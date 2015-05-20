@@ -79,7 +79,8 @@
 				<top>518</top>
 				<width>480</width>
 				<height>35</height>
-				<onup>Close</onup>
+				<onup condition="!Control.IsVisible(96)">Close</onup>
+				<onup condition="Control.IsVisible(96)">3002</onup>
 				<ondown>7001</ondown>
 				<onleft>Close</onleft>
 				<onright>1000</onright>

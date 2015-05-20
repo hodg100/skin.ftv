@@ -94,8 +94,8 @@
 			<thumb />
 			<property name="labelID">31101</property>
 			<property name="defaultID">apps</property>
-			<onclick>ActivateWindow(Programs,addons://sources/executable/)</onclick>
-			<property name="path">ActivateWindow(Programs,addons://sources/executable/)</property>
+			<onclick>ActivateWindow(Programs)</onclick>
+			<property name="path">ActivateWindow(Programs)</property>
 			<visible>StringCompare(System.ProfileName,Hitcher)</visible>
 			<property name="submenuVisibility">num-31101</property>
 			<property name="group">mainmenu</property>
@@ -252,8 +252,8 @@
 			<thumb />
 			<property name="labelID">31101</property>
 			<property name="defaultID">apps</property>
-			<onclick>ActivateWindow(Programs,addons://sources/executable/)</onclick>
-			<property name="path">ActivateWindow(Programs,addons://sources/executable/)</property>
+			<onclick>ActivateWindow(Programs)</onclick>
+			<property name="path">ActivateWindow(Programs)</property>
 			<visible>StringCompare(System.ProfileName,User 2)</visible>
 			<property name="submenuVisibility">num-31101</property>
 			<property name="group">mainmenu</property>
@@ -410,8 +410,8 @@
 			<thumb />
 			<property name="labelID">31101</property>
 			<property name="defaultID">apps</property>
-			<onclick>ActivateWindow(Programs,addons://sources/executable/)</onclick>
-			<property name="path">ActivateWindow(Programs,addons://sources/executable/)</property>
+			<onclick>ActivateWindow(Programs)</onclick>
+			<property name="path">ActivateWindow(Programs)</property>
 			<visible>StringCompare(System.ProfileName,User 3)</visible>
 			<property name="submenuVisibility">num-31101</property>
 			<property name="group">mainmenu</property>
@@ -568,8 +568,8 @@
 			<thumb />
 			<property name="labelID">31101</property>
 			<property name="defaultID">apps</property>
-			<onclick>ActivateWindow(Programs,addons://sources/executable/)</onclick>
-			<property name="path">ActivateWindow(Programs,addons://sources/executable/)</property>
+			<onclick>ActivateWindow(Programs)</onclick>
+			<property name="path">ActivateWindow(Programs)</property>
 			<visible>StringCompare(System.ProfileName,User 4)</visible>
 			<property name="submenuVisibility">num-31101</property>
 			<property name="group">mainmenu</property>
@@ -726,8 +726,8 @@
 			<thumb />
 			<property name="labelID">31101</property>
 			<property name="defaultID">apps</property>
-			<onclick>ActivateWindow(Programs,addons://sources/executable/)</onclick>
-			<property name="path">ActivateWindow(Programs,addons://sources/executable/)</property>
+			<onclick>ActivateWindow(Programs)</onclick>
+			<property name="path">ActivateWindow(Programs)</property>
 			<visible>StringCompare(System.ProfileName,User 5)</visible>
 			<property name="submenuVisibility">num-31101</property>
 			<property name="group">mainmenu</property>
@@ -884,8 +884,8 @@
 			<thumb />
 			<property name="labelID">31101</property>
 			<property name="defaultID">apps</property>
-			<onclick>ActivateWindow(Programs,addons://sources/executable/)</onclick>
-			<property name="path">ActivateWindow(Programs,addons://sources/executable/)</property>
+			<onclick>ActivateWindow(Programs)</onclick>
+			<property name="path">ActivateWindow(Programs)</property>
 			<visible>StringCompare(System.ProfileName,User 6)</visible>
 			<property name="submenuVisibility">num-31101</property>
 			<property name="group">mainmenu</property>
