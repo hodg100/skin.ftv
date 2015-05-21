@@ -120,7 +120,7 @@
 						<label>-</label>
 						<onfocus>Right</onfocus>
 						<include>NoTextures</include>
-						<visible>!Control.HasFocus(1002) + !Control.HasFocus(1003) + !Control.HasFocus(1004) + !Control.HasFocus(1005) + !Control.HasFocus(1006)</visible>
+						<visible>!Control.HasFocus(1002) + !Control.HasFocus(20) + !Control.HasFocus(1004) + !Control.HasFocus(1005) + !Control.HasFocus(1006)</visible>
 					</control>
 					<control id="1002" type="button">
 						<width>182</width>

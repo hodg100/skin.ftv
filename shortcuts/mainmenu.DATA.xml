@@ -49,8 +49,8 @@
 		<action>ActivateWindow(Music,root)</action>
 	</shortcut>
 	<shortcut>
-		<defaultID>apps</defaultID>
-		<label>31101</label>
+		<defaultID>addons</defaultID>
+		<label>24001</label>
 		<label2>Custom shortcut</label2>
 		<icon>DefaultProgram.png</icon>
 		<thumb />
@@ -58,7 +58,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID>pictures</defaultID>
-		<label>31100</label>
+		<label>10002</label>
 		<label2>Common Shortcut</label2>
 		<icon>DefaultPicture.png</icon>
 		<thumb />

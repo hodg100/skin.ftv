@@ -120,15 +120,16 @@
 			<ondown>noop</ondown>
 			<onleft>noop</onleft>
 			<onright>ClearProperty(MainMenuFocus,home)</onright>
-			<onright condition="StringCompare(Container(9000).ListItem.Label,Movies) + IntegerGreaterThan(Container(100).NumItems,1)">SetFocus(100)</onright>
-			<onright condition="StringCompare(Container(9000).ListItem.Label,Movies) + StringCompare(Container(100).NumItems,1)">ActivateWindow(Videos,$VAR[MovieWidget1],return)</onright>
-			<onright condition="StringCompare(Container(9000).ListItem.Label,TV Shows) + IntegerGreaterThan(Container(200).NumItems,1)">SetFocus(200)</onright>
-			<onright condition="StringCompare(Container(9000).ListItem.Label,TV Shows) + StringCompare(Container(200).NumItems,1)">ActivateWindow(Videos,$VAR[TVWidget1],return)</onright>
-			<onright condition="StringCompare(Container(9000).ListItem.Label,Music) + IntegerGreaterThan(Container(300).NumItems,1)">SetFocus(300)</onright>
-			<onright condition="StringCompare(Container(9000).ListItem.Label,Music) + StringCompare(Container(300).NumItems,1)">ActivateWindow(MusicLibrary,$VAR[MusicWidget1],return)</onright>
-			<onright condition="StringCompare(Container(9000).ListItem.Label,Apps)">ActivateWindow(Programs,addons://sources/executable/,return)</onright>
-			<onright condition="StringCompare(Container(9000).ListItem.Label,Photos)">ActivateWindow(Pictures,addons://sources/image,return)</onright>
-			<onright condition="!StringCompare(Container(9000).ListItem.Label,Movies) + !StringCompare(Container(9000).ListItem.Label,TV Shows) + !StringCompare(Container(9000).ListItem.Label,Music) + !StringCompare(Container(9000).ListItem.Label,Apps) + !StringCompare(Container(9000).ListItem.Label,Photos)">Select</onright>
+			<onright condition="StringCompare(Container(9000).ListItem.Label,$LOCALIZE[342]) + IntegerGreaterThan(Container(100).NumItems,1)">SetFocus(100)</onright>
+			<onright condition="StringCompare(Container(9000).ListItem.Label,$LOCALIZE[342]) + StringCompare(Container(100).NumItems,1)">ActivateWindow(Videos,$VAR[MovieWidget1],return)</onright>
+			<onright condition="StringCompare(Container(9000).ListItem.Label,$LOCALIZE[20343]) + IntegerGreaterThan(Container(200).NumItems,1)">SetFocus(200)</onright>
+			<onright condition="StringCompare(Container(9000).ListItem.Label,$LOCALIZE[20343]) + StringCompare(Container(200).NumItems,1)">ActivateWindow(Videos,$VAR[TVWidget1],return)</onright>
+			<onright condition="StringCompare(Container(9000).ListItem.Label,$LOCALIZE[2]) + IntegerGreaterThan(Container(300).NumItems,1)">SetFocus(300)</onright>
+			<onright condition="StringCompare(Container(9000).ListItem.Label,$LOCALIZE[2]) + StringCompare(Container(300).NumItems,1)">ActivateWindow(MusicLibrary,$VAR[MusicWidget1],return)</onright>
+			<onright condition="StringCompare(Container(9000).ListItem.Label,$LOCALIZE[3])">ActivateWindow(Videos,$VAR[VideoWidget],return)</onright>
+			<onright condition="StringCompare(Container(9000).ListItem.Label,$LOCALIZE[24001])">ActivateWindow(Programs,$VAR[AddonWidget],return)</onright>
+			<onright condition="StringCompare(Container(9000).ListItem.Label,$LOCALIZE[1])">ActivateWindow(Pictures,$VAR[PictureWidget],return)</onright>
+			<onright condition="!StringCompare(Container(9000).ListItem.Label,$LOCALIZE[342]) + !StringCompare(Container(9000).ListItem.Label,$LOCALIZE[20343]) + !StringCompare(Container(9000).ListItem.Label,$LOCALIZE[2]) + !StringCompare(Container(9000).ListItem.Label,$LOCALIZE[24001]) + !StringCompare(Container(9000).ListItem.Label,$LOCALIZE[1]) + !StringCompare(Container(9000).ListItem.Label,$LOCALIZE[3])">Select</onright>
 			<orientation>vertical</orientation>
 			<scrolltime easing="out" tween="sine">180</scrolltime>
 			<include>WindowHomeFadeAnimation</include>
@@ -271,7 +272,7 @@
 			<scrolltime easing="inout" tween="sine">300</scrolltime>
 			<include>HomeWidgetsAnimation</include>
 			<include>WindowHomeFadeAnimation</include>
-			<visible>StringCompare(Container(9000).ListItem.Label,Movies)</visible>
+			<visible>StringCompare(Container(9000).ListItem.Label,$LOCALIZE[342])</visible>
 			<animation condition="StringCompare(Container(100).NumItems,1)" effect="slide" end="-304,0">Conditional</animation>
 			<animation condition="StringCompare(Container(100).NumItems,2)" effect="slide" end="0,-185">Conditional</animation>
 			<animation condition="IntegerGreaterThan(Container(100).NumItems,2) + Container(100).Row(1)" easing="inout" effect="slide" end="0,114" time="220" tween="sine">Conditional</animation>
@@ -975,7 +976,7 @@
 			<scrolltime easing="inout" tween="sine">300</scrolltime>
 			<include>HomeWidgetsAnimation</include>
 			<include>WindowHomeFadeAnimation</include>
-			<visible>StringCompare(Container(9000).ListItem.Label,TV Shows)</visible>
+			<visible>StringCompare(Container(9000).ListItem.Label,$LOCALIZE[20343])</visible>
 			<animation condition="StringCompare(Container(200).NumItems,1)" effect="slide" end="-304,0">Conditional</animation>
 			<animation condition="StringCompare(Container(200).NumItems,2)" effect="slide" end="0,-185">Conditional</animation>
 			<animation condition="IntegerGreaterThan(Container(200).NumItems,2) + Container(200).Row(1)" easing="inout" effect="slide" end="0,114" time="220" tween="sine">Conditional</animation>
@@ -1263,7 +1264,7 @@
 			<scrolltime easing="inout" tween="sine">300</scrolltime>
 			<include>HomeWidgetsAnimation</include>
 			<include>WindowHomeFadeAnimation</include>
-			<visible>StringCompare(Container(9000).ListItem.Label,Music)</visible>
+			<visible>StringCompare(Container(9000).ListItem.Label,$LOCALIZE[2])</visible>
 			<animation condition="StringCompare(Container(300).NumItems,1)" effect="slide" end="-304,0">Conditional</animation>
 			<animation condition="StringCompare(Container(300).NumItems,2)" effect="slide" end="0,-185">Conditional</animation>
 			<animation condition="IntegerGreaterThan(Container(300).NumItems,2) + Container(300).Row(1)" easing="inout" effect="slide" end="0,114" time="220" tween="sine">Conditional</animation>
@@ -2153,7 +2154,7 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</focusedlayout>
-			<content limit="4">library://video/</content>
+			<content limit="4">$VAR[VideoWidget]</content>
 		</control>
 		<!-- Apps widget -->
 		<control id="900" type="fixedlist">
@@ -2166,7 +2167,7 @@
 			<orientation>horizontal</orientation>
 			<include>WindowHomeFadeAnimation</include>
 			<include>HomeWidgetsAnimation</include>
-			<visible>StringCompare(Container(9000).ListItem.Label,apps)</visible>
+			<visible>StringCompare(Container(9000).ListItem.Label,$LOCALIZE[24001])</visible>
 			<itemlayout height="576" width="436">
 				<control type="image">
 					<top>68</top>
@@ -2189,7 +2190,7 @@
 					<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
 				</control>
 			</focusedlayout>
-			<content limit="4">addons://sources/executable/</content>
+			<content limit="4">$VAR[AddonWidget]</content>
 		</control>
 		<!-- Photos widget -->
 		<control id="900" type="fixedlist">
@@ -2202,7 +2203,7 @@
 			<orientation>horizontal</orientation>
 			<include>WindowHomeFadeAnimation</include>
 			<include>HomeWidgetsAnimation</include>
-			<visible>StringCompare(Container(9000).ListItem.Label,photos)</visible>
+			<visible>StringCompare(Container(9000).ListItem.Label,$LOCALIZE[1])</visible>
 			<itemlayout height="576" width="436">
 				<control type="image">
 					<top>68</top>
@@ -2225,7 +2226,7 @@
 					<bordertexture border="16,30,16,18">home/image_shadow_small_nf.png</bordertexture>
 				</control>
 			</focusedlayout>
-			<content target="pictures">addons://sources/image</content>
+			<content target="pictures">$VAR[PictureWidget]</content>
 		</control>
 		<!-- Weather widget -->
 		<control type="fixedlist">

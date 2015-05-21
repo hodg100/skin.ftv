@@ -88,30 +88,30 @@
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="7">
-			<label>$LOCALIZE[31101]</label>
+			<label>$LOCALIZE[24001]</label>
 			<label2>Custom shortcut</label2>
 			<icon>DefaultProgram.png</icon>
 			<thumb />
-			<property name="labelID">31101</property>
-			<property name="defaultID">apps</property>
+			<property name="labelID">24001</property>
+			<property name="defaultID">addons</property>
 			<onclick>ActivateWindow(Programs)</onclick>
 			<property name="path">ActivateWindow(Programs)</property>
 			<visible>StringCompare(System.ProfileName,Hitcher)</visible>
-			<property name="submenuVisibility">num-31101</property>
+			<property name="submenuVisibility">num-24001</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="8">
-			<label>$LOCALIZE[31100]</label>
+			<label>$LOCALIZE[10002]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultPicture.png</icon>
 			<thumb />
-			<property name="labelID">31100</property>
+			<property name="labelID">pictures</property>
 			<property name="defaultID">pictures</property>
 			<onclick>ActivateWindow(Pictures)</onclick>
 			<property name="path">ActivateWindow(Pictures)</property>
 			<visible>StringCompare(System.ProfileName,Hitcher)</visible>
-			<property name="submenuVisibility">num-31100</property>
+			<property name="submenuVisibility">pictures</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
@@ -246,30 +246,30 @@
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="7">
-			<label>$LOCALIZE[31101]</label>
+			<label>$LOCALIZE[24001]</label>
 			<label2>Custom shortcut</label2>
 			<icon>DefaultProgram.png</icon>
 			<thumb />
-			<property name="labelID">31101</property>
-			<property name="defaultID">apps</property>
+			<property name="labelID">24001</property>
+			<property name="defaultID">addons</property>
 			<onclick>ActivateWindow(Programs)</onclick>
 			<property name="path">ActivateWindow(Programs)</property>
 			<visible>StringCompare(System.ProfileName,User 2)</visible>
-			<property name="submenuVisibility">num-31101</property>
+			<property name="submenuVisibility">num-24001</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="8">
-			<label>$LOCALIZE[31100]</label>
+			<label>$LOCALIZE[10002]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultPicture.png</icon>
 			<thumb />
-			<property name="labelID">31100</property>
+			<property name="labelID">pictures</property>
 			<property name="defaultID">pictures</property>
 			<onclick>ActivateWindow(Pictures)</onclick>
 			<property name="path">ActivateWindow(Pictures)</property>
 			<visible>StringCompare(System.ProfileName,User 2)</visible>
-			<property name="submenuVisibility">num-31100</property>
+			<property name="submenuVisibility">pictures</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
@@ -404,30 +404,30 @@
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="7">
-			<label>$LOCALIZE[31101]</label>
+			<label>$LOCALIZE[24001]</label>
 			<label2>Custom shortcut</label2>
 			<icon>DefaultProgram.png</icon>
 			<thumb />
-			<property name="labelID">31101</property>
-			<property name="defaultID">apps</property>
+			<property name="labelID">24001</property>
+			<property name="defaultID">addons</property>
 			<onclick>ActivateWindow(Programs)</onclick>
 			<property name="path">ActivateWindow(Programs)</property>
 			<visible>StringCompare(System.ProfileName,User 3)</visible>
-			<property name="submenuVisibility">num-31101</property>
+			<property name="submenuVisibility">num-24001</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="8">
-			<label>$LOCALIZE[31100]</label>
+			<label>$LOCALIZE[10002]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultPicture.png</icon>
 			<thumb />
-			<property name="labelID">31100</property>
+			<property name="labelID">pictures</property>
 			<property name="defaultID">pictures</property>
 			<onclick>ActivateWindow(Pictures)</onclick>
 			<property name="path">ActivateWindow(Pictures)</property>
 			<visible>StringCompare(System.ProfileName,User 3)</visible>
-			<property name="submenuVisibility">num-31100</property>
+			<property name="submenuVisibility">pictures</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
@@ -562,30 +562,30 @@
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="7">
-			<label>$LOCALIZE[31101]</label>
+			<label>$LOCALIZE[24001]</label>
 			<label2>Custom shortcut</label2>
 			<icon>DefaultProgram.png</icon>
 			<thumb />
-			<property name="labelID">31101</property>
-			<property name="defaultID">apps</property>
+			<property name="labelID">24001</property>
+			<property name="defaultID">addons</property>
 			<onclick>ActivateWindow(Programs)</onclick>
 			<property name="path">ActivateWindow(Programs)</property>
 			<visible>StringCompare(System.ProfileName,User 4)</visible>
-			<property name="submenuVisibility">num-31101</property>
+			<property name="submenuVisibility">num-24001</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="8">
-			<label>$LOCALIZE[31100]</label>
+			<label>$LOCALIZE[10002]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultPicture.png</icon>
 			<thumb />
-			<property name="labelID">31100</property>
+			<property name="labelID">pictures</property>
 			<property name="defaultID">pictures</property>
 			<onclick>ActivateWindow(Pictures)</onclick>
 			<property name="path">ActivateWindow(Pictures)</property>
 			<visible>StringCompare(System.ProfileName,User 4)</visible>
-			<property name="submenuVisibility">num-31100</property>
+			<property name="submenuVisibility">pictures</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
@@ -720,30 +720,30 @@
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="7">
-			<label>$LOCALIZE[31101]</label>
+			<label>$LOCALIZE[24001]</label>
 			<label2>Custom shortcut</label2>
 			<icon>DefaultProgram.png</icon>
 			<thumb />
-			<property name="labelID">31101</property>
-			<property name="defaultID">apps</property>
+			<property name="labelID">24001</property>
+			<property name="defaultID">addons</property>
 			<onclick>ActivateWindow(Programs)</onclick>
 			<property name="path">ActivateWindow(Programs)</property>
 			<visible>StringCompare(System.ProfileName,User 5)</visible>
-			<property name="submenuVisibility">num-31101</property>
+			<property name="submenuVisibility">num-24001</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="8">
-			<label>$LOCALIZE[31100]</label>
+			<label>$LOCALIZE[10002]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultPicture.png</icon>
 			<thumb />
-			<property name="labelID">31100</property>
+			<property name="labelID">pictures</property>
 			<property name="defaultID">pictures</property>
 			<onclick>ActivateWindow(Pictures)</onclick>
 			<property name="path">ActivateWindow(Pictures)</property>
 			<visible>StringCompare(System.ProfileName,User 5)</visible>
-			<property name="submenuVisibility">num-31100</property>
+			<property name="submenuVisibility">pictures</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
@@ -878,30 +878,30 @@
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="7">
-			<label>$LOCALIZE[31101]</label>
+			<label>$LOCALIZE[24001]</label>
 			<label2>Custom shortcut</label2>
 			<icon>DefaultProgram.png</icon>
 			<thumb />
-			<property name="labelID">31101</property>
-			<property name="defaultID">apps</property>
+			<property name="labelID">24001</property>
+			<property name="defaultID">addons</property>
 			<onclick>ActivateWindow(Programs)</onclick>
 			<property name="path">ActivateWindow(Programs)</property>
 			<visible>StringCompare(System.ProfileName,User 6)</visible>
-			<property name="submenuVisibility">num-31101</property>
+			<property name="submenuVisibility">num-24001</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="8">
-			<label>$LOCALIZE[31100]</label>
+			<label>$LOCALIZE[10002]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultPicture.png</icon>
 			<thumb />
-			<property name="labelID">31100</property>
+			<property name="labelID">pictures</property>
 			<property name="defaultID">pictures</property>
 			<onclick>ActivateWindow(Pictures)</onclick>
 			<property name="path">ActivateWindow(Pictures)</property>
 			<visible>StringCompare(System.ProfileName,User 6)</visible>
-			<property name="submenuVisibility">num-31100</property>
+			<property name="submenuVisibility">pictures</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
@@ -2015,10 +2015,10 @@
 	<include name="skinshortcuts-group-alt-videos" />
 	<include name="skinshortcuts-group-music" />
 	<include name="skinshortcuts-group-alt-music" />
-	<include name="skinshortcuts-group-31101" />
-	<include name="skinshortcuts-group-alt-31101" />
-	<include name="skinshortcuts-group-31100" />
-	<include name="skinshortcuts-group-alt-31100" />
+	<include name="skinshortcuts-group-24001" />
+	<include name="skinshortcuts-group-alt-24001" />
+	<include name="skinshortcuts-group-pictures" />
+	<include name="skinshortcuts-group-alt-pictures" />
 	<include name="skinshortcuts-group-weather" />
 	<include name="skinshortcuts-group-alt-weather" />
 	<include name="skinshortcuts-group-settings" />

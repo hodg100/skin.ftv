@@ -96,6 +96,18 @@
 		<value condition="!IsEmpty(Skin.String(MusicWidget8))">$INFO[Skin.String(MusicWidget8)]</value>
 		<value>musicdb://songs/</value>
 	</variable>
+	<variable name="VideoWidget">
+		<value condition="!IsEmpty(Skin.String(VideoWidget))">$INFO[Skin.String(VideoWidget)]</value>
+		<value>library://video/</value>
+	</variable>
+	<variable name="AddonWidget">
+		<value condition="!IsEmpty(Skin.String(VideoWidget))">$INFO[Skin.String(VideoWidget)]</value>
+		<value>addons://sources/executable/</value>
+	</variable>
+	<variable name="PictureWidget">
+		<value condition="!IsEmpty(Skin.String(VideoWidget))">$INFO[Skin.String(VideoWidget)]</value>
+		<value>addons://sources/image</value>
+	</variable>
 	<variable name="MovieWidgetName1">
 		<value condition="!IsEmpty(Skin.String(MovieWidgetName1))">$INFO[Skin.String(MovieWidgetName1)]</value>
 		<value>Recently Added Movies</value>
