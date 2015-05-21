@@ -768,7 +768,7 @@
 			</focusedlayout>
 			<content>
 				<item>
-					<label>Recently Added Movies</label>
+					<label>$VAR[MovieWidgetName1]</label>
 					<visible>!IsEmpty(Container(101).ListItemNoWrap(0).Icon)</visible>
 					<property name="Icon1">$INFO[Container(101).ListItemNoWrap(0).Icon]</property>
 					<property name="Icon2">$INFO[Container(101).ListItemNoWrap(1).Icon]</property>
@@ -791,7 +791,7 @@
 					<onclick>ActivateWindow(Videos,$VAR[MovieWidget1],return)</onclick>
 				</item>
 				<item>
-					<label>Your Movies</label>
+					<label>$VAR[MovieWidgetName2]</label>
 					<visible>!IsEmpty(Container(102).ListItemNoWrap(0).Icon)</visible>
 					<property name="Icon1">$INFO[Container(102).ListItemNoWrap(0).Icon]</property>
 					<property name="Icon2">$INFO[Container(102).ListItemNoWrap(1).Icon]</property>
@@ -814,7 +814,7 @@
 					<onclick>ActivateWindow(Videos,$VAR[MovieWidget2],return)</onclick>
 				</item>
 				<item>
-					<label>In Progress Movies</label>
+					<label>$VAR[MovieWidgetName3]</label>
 					<visible>!IsEmpty(Container(103).ListItemNoWrap(0).Icon)</visible>
 					<property name="Icon1">$INFO[Container(103).ListItemNoWrap(0).Icon]</property>
 					<property name="Icon2">$INFO[Container(103).ListItemNoWrap(1).Icon]</property>
@@ -837,7 +837,7 @@
 					<onclick>ActivateWindow(Videos,$VAR[MovieWidget3],return)</onclick>
 				</item>
 				<item>
-					<label>Kids Movies</label>
+					<label>$VAR[MovieWidgetName4]</label>
 					<visible>!IsEmpty(Container(104).ListItemNoWrap(0).Icon)</visible>
 					<property name="Icon1">$INFO[Container(104).ListItemNoWrap(0).Icon]</property>
 					<property name="Icon2">$INFO[Container(104).ListItemNoWrap(1).Icon]</property>
@@ -860,7 +860,7 @@
 					<onclick>ActivateWindow(Videos,$VAR[MovieWidget4],return)</onclick>
 				</item>
 				<item>
-					<label>Action &amp; Adventure Movies</label>
+					<label>$VAR[MovieWidgetName5]</label>
 					<visible>!IsEmpty(Container(105).ListItemNoWrap(0).Icon)</visible>
 					<property name="Icon1">$INFO[Container(105).ListItemNoWrap(0).Icon]</property>
 					<property name="Icon2">$INFO[Container(105).ListItemNoWrap(1).Icon]</property>
@@ -883,7 +883,7 @@
 					<onclick>ActivateWindow(Videos,$VAR[MovieWidget5],return)</onclick>
 				</item>
 				<item>
-					<label>Comedy Movies</label>
+					<label>$VAR[MovieWidgetName6]</label>
 					<visible>!IsEmpty(Container(106).ListItemNoWrap(0).Icon)</visible>
 					<property name="Icon1">$INFO[Container(106).ListItemNoWrap(0).Icon]</property>
 					<property name="Icon2">$INFO[Container(106).ListItemNoWrap(1).Icon]</property>
@@ -906,7 +906,7 @@
 					<onclick>ActivateWindow(Videos,$VAR[MovieWidget6],return)</onclick>
 				</item>
 				<item>
-					<label>Sci-Fi Movies</label>
+					<label>$VAR[MovieWidgetName7]</label>
 					<visible>!IsEmpty(Container(107).ListItemNoWrap(0).Icon)</visible>
 					<property name="Icon1">$INFO[Container(107).ListItemNoWrap(0).Icon]</property>
 					<property name="Icon2">$INFO[Container(107).ListItemNoWrap(1).Icon]</property>
@@ -929,7 +929,7 @@
 					<onclick>ActivateWindow(Videos,$VAR[MovieWidget7],return)</onclick>
 				</item>
 				<item>
-					<label>Top Rated Movies</label>
+					<label>$VAR[MovieWidgetName8]</label>
 					<visible>!IsEmpty(Container(108).ListItemNoWrap(0).Icon)</visible>
 					<property name="Icon1">$INFO[Container(108).ListItemNoWrap(0).Icon]</property>
 					<property name="Icon2">$INFO[Container(108).ListItemNoWrap(1).Icon]</property>
@@ -984,7 +984,7 @@
 			<include condition="Skin.HasSetting(WideTVShowArt)">HomeTVShowList</include>
 			<content>
 				<item>
-					<label>Recently Updated TV Shows</label>
+					<label>$VAR[TVWidgetName1]</label>
 					<visible>!IsEmpty(Container(201).ListItemNoWrap(0).Icon)</visible>
 					<property name="Icon1">$INFO[Container(201).ListItemNoWrap(0).Icon]</property>
 					<property name="Icon2">$INFO[Container(201).ListItemNoWrap(1).Icon]</property>
@@ -1016,7 +1016,7 @@
 					<onclick>ActivateWindow(Videos,$VAR[TVWidget1],return)</onclick>
 				</item>
 				<item>
-					<label>Your TV Shows</label>
+					<label>$VAR[TVWidgetName2]</label>
 					<visible>!IsEmpty(Container(202).ListItemNoWrap(0).Icon)</visible>
 					<property name="Icon1">$INFO[Container(202).ListItemNoWrap(0).Icon]</property>
 					<property name="Icon2">$INFO[Container(202).ListItemNoWrap(1).Icon]</property>
@@ -1048,7 +1048,7 @@
 					<onclick>ActivateWindow(Videos,$VAR[TVWidget2],return)</onclick>
 				</item>
 				<item>
-					<label>In Progress TV Shows</label>
+					<label>$VAR[TVWidgetName3]</label>
 					<visible>!IsEmpty(Container(203).ListItemNoWrap(0).Icon)</visible>
 					<property name="Icon1">$INFO[Container(203).ListItemNoWrap(0).Icon]</property>
 					<property name="Icon2">$INFO[Container(203).ListItemNoWrap(1).Icon]</property>
@@ -1080,7 +1080,7 @@
 					<onclick>ActivateWindow(Videos,$VAR[TVWidget3],return)</onclick>
 				</item>
 				<item>
-					<label>Kids TV Shows</label>
+					<label>$VAR[TVWidgetName4]</label>
 					<visible>!IsEmpty(Container(204).ListItemNoWrap(0).Icon)</visible>
 					<property name="Icon1">$INFO[Container(204).ListItemNoWrap(0).Icon]</property>
 					<property name="Icon2">$INFO[Container(204).ListItemNoWrap(1).Icon]</property>
@@ -1112,7 +1112,7 @@
 					<onclick>ActivateWindow(Videos,$VAR[TVWidget4],return)</onclick>
 				</item>
 				<item>
-					<label>Action &amp; Adventure TV Shows</label>
+					<label>$VAR[TVWidgetName5]</label>
 					<visible>!IsEmpty(Container(205).ListItemNoWrap(0).Icon)</visible>
 					<property name="Icon1">$INFO[Container(205).ListItemNoWrap(0).Icon]</property>
 					<property name="Icon2">$INFO[Container(205).ListItemNoWrap(1).Icon]</property>
@@ -1144,7 +1144,7 @@
 					<onclick>ActivateWindow(Videos,$VAR[TVWidget5],return)</onclick>
 				</item>
 				<item>
-					<label>Comedy TV Shows</label>
+					<label>$VAR[TVWidgetName6]</label>
 					<visible>!IsEmpty(Container(206).ListItemNoWrap(0).Icon)</visible>
 					<property name="Icon1">$INFO[Container(206).ListItemNoWrap(0).Icon]</property>
 					<property name="Icon2">$INFO[Container(206).ListItemNoWrap(1).Icon]</property>
@@ -1176,7 +1176,7 @@
 					<onclick>ActivateWindow(Videos,$VAR[TVWidget6],return)</onclick>
 				</item>
 				<item>
-					<label>Sci-Fi TV Shows</label>
+					<label>$VAR[TVWidgetName7]</label>
 					<visible>!IsEmpty(Container(207).ListItemNoWrap(0).Icon)</visible>
 					<property name="Icon1">$INFO[Container(207).ListItemNoWrap(0).Icon]</property>
 					<property name="Icon2">$INFO[Container(207).ListItemNoWrap(1).Icon]</property>
@@ -1208,7 +1208,7 @@
 					<onclick>ActivateWindow(Videos,$VAR[TVWidget7],return)</onclick>
 				</item>
 				<item>
-					<label>Top Rated TV Shows</label>
+					<label>$VAR[TVWidgetName8]</label>
 					<visible>!IsEmpty(Container(208).ListItemNoWrap(0).Icon)</visible>
 					<property name="Icon1">$INFO[Container(208).ListItemNoWrap(0).Icon]</property>
 					<property name="Icon2">$INFO[Container(208).ListItemNoWrap(1).Icon]</property>
@@ -1822,7 +1822,7 @@
 			</focusedlayout>
 			<content>
 				<item>
-					<label>Recently Played Albums</label>
+					<label>$VAR[MusicWidgetName1]</label>
 					<visible>!IsEmpty(Container(301).ListItemNoWrap(0).Icon)</visible>
 					<property name="Icon1">$INFO[Container(301).ListItemNoWrap(0).Icon]</property>
 					<property name="Icon2">$INFO[Container(301).ListItemNoWrap(1).Icon]</property>
@@ -1839,7 +1839,7 @@
 					<onclick>ActivateWindow(MusicLibrary,$VAR[MusicWidget1],return)</onclick>
 				</item>
 				<item>
-					<label>Your Albums</label>
+					<label>$VAR[MusicWidgetName2]</label>
 					<visible>!IsEmpty(Container(302).ListItemNoWrap(0).Icon)</visible>
 					<property name="Icon1">$INFO[Container(302).ListItemNoWrap(0).Icon]</property>
 					<property name="Icon2">$INFO[Container(302).ListItemNoWrap(1).Icon]</property>
@@ -1856,7 +1856,7 @@
 					<onclick>ActivateWindow(MusicLibrary,$VAR[MusicWidget2],return)</onclick>
 				</item>
 				<item>
-					<label>Recently Added Albums</label>
+					<label>$VAR[MusicWidgetName3]</label>
 					<visible>!IsEmpty(Container(303).ListItemNoWrap(0).Icon)</visible>
 					<property name="Icon1">$INFO[Container(303).ListItemNoWrap(0).Icon]</property>
 					<property name="Icon2">$INFO[Container(303).ListItemNoWrap(1).Icon]</property>
@@ -1873,7 +1873,7 @@
 					<onclick>ActivateWindow(MusicLibrary,$VAR[MusicWidget3],return)</onclick>
 				</item>
 				<item>
-					<label>Your Artists</label>
+					<label>$VAR[MusicWidgetName4]</label>
 					<visible>!IsEmpty(Container(304).ListItemNoWrap(0).Icon)</visible>
 					<property name="Icon1">$INFO[Container(304).ListItemNoWrap(0).Icon]</property>
 					<property name="Icon2">$INFO[Container(304).ListItemNoWrap(1).Icon]</property>
@@ -1890,7 +1890,7 @@
 					<onclick>ActivateWindow(MusicLibrary,$VAR[MusicWidget4],return)</onclick>
 				</item>
 				<item>
-					<label>Your Genres</label>
+					<label>$VAR[MusicWidgetName5]</label>
 					<visible>!IsEmpty(Container(305).ListItemNoWrap(0).Icon)</visible>
 					<property name="Icon1">$INFO[Container(305).ListItemNoWrap(0).Icon]</property>
 					<property name="Icon2">$INFO[Container(305).ListItemNoWrap(1).Icon]</property>
@@ -1907,7 +1907,7 @@
 					<onclick>ActivateWindow(MusicLibrary,$VAR[MusicWidget5],return)</onclick>
 				</item>
 				<item>
-					<label>Top Rated Albums</label>
+					<label>$VAR[MusicWidgetName6]</label>
 					<visible>!IsEmpty(Container(306).ListItemNoWrap(0).Icon)</visible>
 					<property name="Icon1">$INFO[Container(306).ListItemNoWrap(0).Icon]</property>
 					<property name="Icon2">$INFO[Container(306).ListItemNoWrap(1).Icon]</property>
@@ -1924,7 +1924,7 @@
 					<onclick>ActivateWindow(MusicLibrary,$VAR[MusicWidget6],return)</onclick>
 				</item>
 				<item>
-					<label>Top Rated Songs</label>
+					<label>$VAR[MusicWidgetName7]</label>
 					<visible>!IsEmpty(Container(307).ListItemNoWrap(0).Icon)</visible>
 					<property name="Icon1">$INFO[Container(307).ListItemNoWrap(0).Icon]</property>
 					<property name="Icon2">$INFO[Container(307).ListItemNoWrap(1).Icon]</property>
@@ -1941,7 +1941,7 @@
 					<onclick>ActivateWindow(MusicLibrary,$VAR[MusicWidget7],return)</onclick>
 				</item>
 				<item>
-					<label>Your Songs</label>
+					<label>$VAR[MusicWidgetName8]</label>
 					<visible>!IsEmpty(Container(308).ListItemNoWrap(0).Icon)</visible>
 					<property name="Icon1">$INFO[Container(308).ListItemNoWrap(0).Icon]</property>
 					<property name="Icon2">$INFO[Container(308).ListItemNoWrap(1).Icon]</property>

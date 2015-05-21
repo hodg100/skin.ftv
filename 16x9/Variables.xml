@@ -96,6 +96,102 @@
 		<value condition="!IsEmpty(Skin.String(MusicWidget8))">$INFO[Skin.String(MusicWidget8)]</value>
 		<value>musicdb://songs/</value>
 	</variable>
+	<variable name="MovieWidgetName1">
+		<value condition="!IsEmpty(Skin.String(MovieWidgetName1))">$INFO[Skin.String(MovieWidgetName1)]</value>
+		<value>Recently Added Movies</value>
+	</variable>
+	<variable name="MovieWidgetName2">
+		<value condition="!IsEmpty(Skin.String(MovieWidgetName2))">$INFO[Skin.String(MovieWidgetName2)]</value>
+		<value>Your Movies</value>
+	</variable>
+	<variable name="MovieWidgetName3">
+		<value condition="!IsEmpty(Skin.String(MovieWidgetName3))">$INFO[Skin.String(MovieWidgetName3)]</value>
+		<value>In Progress Movies</value>
+	</variable>
+	<variable name="MovieWidgetName4">
+		<value condition="!IsEmpty(Skin.String(MovieWidgetName4))">$INFO[Skin.String(MovieWidgetName4)]</value>
+		<value>Kids Movies</value>
+	</variable>
+	<variable name="MovieWidgetName5">
+		<value condition="!IsEmpty(Skin.String(MovieWidgetName5))">$INFO[Skin.String(MovieWidgetName5)]</value>
+		<value>Action &amp; Adventure Movies</value>
+	</variable>
+	<variable name="MovieWidgetName6">
+		<value condition="!IsEmpty(Skin.String(MovieWidgetName6))">$INFO[Skin.String(MovieWidgetName6)]</value>
+		<value>Comedy Movies</value>
+	</variable>
+	<variable name="MovieWidgetName7">
+		<value condition="!IsEmpty(Skin.String(MovieWidgetName7))">$INFO[Skin.String(MovieWidgetName7)]</value>
+		<value>Sci-Fi Movies</value>
+	</variable>
+	<variable name="MovieWidgetName8">
+		<value condition="!IsEmpty(Skin.String(MovieWidgetName8))">$INFO[Skin.String(MovieWidgetName8)]</value>
+		<value>Top Rated Movies</value>
+	</variable>
+	<variable name="TVWidgetName1">
+		<value condition="!IsEmpty(Skin.String(TVWidgetName1))">$INFO[Skin.String(TVWidgetName1)]</value>
+		<value>Recently Updated TV Shows</value>
+	</variable>
+	<variable name="TVWidgetName2">
+		<value condition="!IsEmpty(Skin.String(TVWidgetName2))">$INFO[Skin.String(TVWidgetName2)]</value>
+		<value>Your TV Shows</value>
+	</variable>
+	<variable name="TVWidgetName3">
+		<value condition="!IsEmpty(Skin.String(TVWidgetName3))">$INFO[Skin.String(TVWidgetName3)]</value>
+		<value>Action &amp; Adventure TV Shows</value>
+	</variable>
+	<variable name="TVWidgetName4">
+		<value condition="!IsEmpty(Skin.String(TVWidgetName4))">$INFO[Skin.String(TVWidgetName4)]</value>
+		<value>In Progress TV Shows</value>
+	</variable>
+	<variable name="TVWidgetName5">
+		<value condition="!IsEmpty(Skin.String(TVWidgetName5))">$INFO[Skin.String(TVWidgetName5)]</value>
+		<value>Kids TV Shows</value>
+	</variable>
+	<variable name="TVWidgetName6">
+		<value condition="!IsEmpty(Skin.String(TVWidgetName6))">$INFO[Skin.String(TVWidgetName6)]</value>
+		<value>Comedy TV Shows</value>
+	</variable>
+	<variable name="TVWidgetName7">
+		<value condition="!IsEmpty(Skin.String(TVWidgetName7))">$INFO[Skin.String(TVWidgetName7)]</value>
+		<value>Sci-Fi TV Shows</value>
+	</variable>
+	<variable name="TVWidgetName8">
+		<value condition="!IsEmpty(Skin.String(TVWidgetName8))">$INFO[Skin.String(TVWidgetName8)]</value>
+		<value>Top Rated TV Shows</value>
+	</variable>
+	<variable name="MusicWidgetName1">
+		<value condition="!IsEmpty(Skin.String(MusicWidgetName1))">$INFO[Skin.String(MusicWidgetName1)]</value>
+		<value>Recently Played Albums</value>
+	</variable>
+	<variable name="MusicWidgetName2">
+		<value condition="!IsEmpty(Skin.String(MusicWidgetName2))">$INFO[Skin.String(MusicWidgetName2)]</value>
+		<value>Your Albums</value>
+	</variable>
+	<variable name="MusicWidgetName3">
+		<value condition="!IsEmpty(Skin.String(MusicWidgetName3))">$INFO[Skin.String(MusicWidgetName3)]</value>
+		<value>Recently Added Albums</value>
+	</variable>
+	<variable name="MusicWidgetName4">
+		<value condition="!IsEmpty(Skin.String(MusicWidgetName4))">$INFO[Skin.String(MusicWidgetName4)]</value>
+		<value>Your Artists</value>
+	</variable>
+	<variable name="MusicWidgetName5">
+		<value condition="!IsEmpty(Skin.String(MusicWidgetName5))">$INFO[Skin.String(MusicWidgetName5)]</value>
+		<value>Your Genres</value>
+	</variable>
+	<variable name="MusicWidgetName6">
+		<value condition="!IsEmpty(Skin.String(MusicWidgetName6))">$INFO[Skin.String(MusicWidgetName6)]</value>
+		<value>Top Rated Albums</value>
+	</variable>
+	<variable name="MusicWidgetName7">
+		<value condition="!IsEmpty(Skin.String(MusicWidgetName7))">$INFO[Skin.String(MusicWidgetName7)]</value>
+		<value>Top Rated Songs</value>
+	</variable>
+	<variable name="MusicWidgetName8">
+		<value condition="!IsEmpty(Skin.String(MusicWidgetName8))">$INFO[Skin.String(MusicWidgetName8)]</value>
+		<value>Your Songs</value>
+	</variable>
 	<variable name="RatingCountry">
 		<value condition="Stringcompare(Skin.String(RatingCountry),US)">US</value>
 		<value condition="Stringcompare(Skin.String(RatingCountry),UK)">UK</value>
