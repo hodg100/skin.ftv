@@ -1,5 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="MovieWidget1">
+		<value condition="!IsEmpty(Skin.String(MovieWidget1))">$INFO[Skin.String(MovieWidget1)]</value>
+		<value>special://skin/extras/video/RecentlyAddedMovies.xsp</value>
+	</variable>
+	<variable name="MovieWidget2">
+		<value condition="!IsEmpty(Skin.String(MovieWidget2))">$INFO[Skin.String(MovieWidget2)]</value>
+		<value>special://skin/extras/video/YourMovies.xsp</value>
+	</variable>
+	<variable name="MovieWidget3">
+		<value condition="!IsEmpty(Skin.String(MovieWidget3))">$INFO[Skin.String(MovieWidget3)]</value>
+		<value>special://skin/extras/video/InProgressMovies.xsp</value>
+	</variable>
+	<variable name="MovieWidget4">
+		<value condition="!IsEmpty(Skin.String(MovieWidget4))">$INFO[Skin.String(MovieWidget4)]</value>
+		<value>special://skin/extras/video/KidsMovies.xsp</value>
+	</variable>
+	<variable name="MovieWidget5">
+		<value condition="!IsEmpty(Skin.String(MovieWidget5))">$INFO[Skin.String(MovieWidget5)]</value>
+		<value>special://skin/extras/video/ActionAdventureMovies.xsp</value>
+	</variable>
+	<variable name="MovieWidget6">
+		<value condition="!IsEmpty(Skin.String(MovieWidget6))">$INFO[Skin.String(MovieWidget6)]</value>
+		<value>special://skin/extras/video/ComedyMovies.xsp</value>
+	</variable>
+	<variable name="MovieWidget7">
+		<value condition="!IsEmpty(Skin.String(MovieWidget7))">$INFO[Skin.String(MovieWidget7)]</value>
+		<value>special://skin/extras/video/SciFiMovies.xsp</value>
+	</variable>
+	<variable name="MovieWidget8">
+		<value condition="!IsEmpty(Skin.String(MovieWidget8))">$INFO[Skin.String(MovieWidget8)]</value>
+		<value>special://skin/extras/video/TopRatedMovies.xsp</value>
+	</variable>
+	<variable name="TVWidget1">
+		<value condition="!IsEmpty(Skin.String(TVWidget1))">$INFO[Skin.String(TVWidget1)]</value>
+		<value>special://skin/extras/video/RecentlyUpdatedTVShows.xsp</value>
+	</variable>
+	<variable name="TVWidget2">
+		<value condition="!IsEmpty(Skin.String(TVWidget2))">$INFO[Skin.String(TVWidget2)]</value>
+		<value>special://skin/extras/video/YourTVShows.xsp</value>
+	</variable>
+	<variable name="TVWidget3">
+		<value condition="!IsEmpty(Skin.String(TVWidget3))">$INFO[Skin.String(TVWidget3)]</value>
+		<value>special://skin/extras/video/InProgressTVShows.xsp</value>
+	</variable>
+	<variable name="TVWidget4">
+		<value condition="!IsEmpty(Skin.String(TVWidget4))">$INFO[Skin.String(TVWidget4)]</value>
+		<value>special://skin/extras/video/KidsTVShows.xsp</value>
+	</variable>
+	<variable name="TVWidget5">
+		<value condition="!IsEmpty(Skin.String(TVWidget5))">$INFO[Skin.String(TVWidget5)]</value>
+		<value>special://skin/extras/video/ActionAdventureTVShows.xsp</value>
+	</variable>
+	<variable name="TVWidget6">
+		<value condition="!IsEmpty(Skin.String(TVWidget6))">$INFO[Skin.String(TVWidget6)]</value>
+		<value>special://skin/extras/video/ComedyTVShows.xsp</value>
+	</variable>
+	<variable name="TVWidget7">
+		<value condition="!IsEmpty(Skin.String(TVWidget7))">$INFO[Skin.String(TVWidget7)]</value>
+		<value>special://skin/extras/video/SciFiTVShows.xsp</value>
+	</variable>
+	<variable name="TVWidget8">
+		<value condition="!IsEmpty(Skin.String(TVWidget8))">$INFO[Skin.String(TVWidget8)]</value>
+		<value>special://skin/extras/video/TopRatedTVShows.xsp</value>
+	</variable>
+	<variable name="MusicWidget1">
+		<value condition="!IsEmpty(Skin.String(MusicWidget1))">$INFO[Skin.String(MusicWidget1)]</value>
+		<value>musicdb://recentlyplayedalbums/</value>
+	</variable>
+	<variable name="MusicWidget2">
+		<value condition="!IsEmpty(Skin.String(MusicWidget2))">$INFO[Skin.String(MusicWidget2)]</value>
+		<value>musicdb://albums/</value>
+	</variable>
+	<variable name="MusicWidget3">
+		<value condition="!IsEmpty(Skin.String(MusicWidget3))">$INFO[Skin.String(MusicWidget3)]</value>
+		<value>musicdb://recentlyaddedalbums/</value>
+	</variable>
+	<variable name="MusicWidget4">
+		<value condition="!IsEmpty(Skin.String(MusicWidget4))">$INFO[Skin.String(MusicWidget4)]</value>
+		<value>musicdb://artists/</value>
+	</variable>
+	<variable name="MusicWidget5">
+		<value condition="!IsEmpty(Skin.String(MusicWidget5))">$INFO[Skin.String(MusicWidget5)]</value>
+		<value>musicdb://genres/</value>
+	</variable>
+	<variable name="MusicWidget6">
+		<value condition="!IsEmpty(Skin.String(MusicWidget6))">$INFO[Skin.String(MusicWidget6)]</value>
+		<value>musicdb://top100/albums/</value>
+	</variable>
+	<variable name="MusicWidget7">
+		<value condition="!IsEmpty(Skin.String(MusicWidget7))">$INFO[Skin.String(MusicWidget7)]</value>
+		<value>musicdb://top100/songs/</value>
+	</variable>
+	<variable name="MusicWidget8">
+		<value condition="!IsEmpty(Skin.String(MusicWidget8))">$INFO[Skin.String(MusicWidget8)]</value>
+		<value>musicdb://songs/</value>
+	</variable>
 	<variable name="RatingCountry">
 		<value condition="Stringcompare(Skin.String(RatingCountry),US)">US</value>
 		<value condition="Stringcompare(Skin.String(RatingCountry),UK)">UK</value>

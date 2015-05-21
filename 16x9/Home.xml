@@ -14,85 +14,101 @@
 		<!-- Movie widgets -->
 		<control id="101" type="list">
 			<include>HiddenHomeList</include>
-			<content limit="6" target="video">special://skin/extras/video/RecentlyAddedMovies.xsp</content>
+			<content limit="6" target="video">$VAR[MovieWidget1]</content>
 		</control>
 		<control id="102" type="list">
 			<include>HiddenHomeList</include>
-			<content limit="6" target="video">special://skin/extras/video/YourMovies.xsp</content>
+			<content limit="6" target="video">$VAR[MovieWidget2]</content>
 		</control>
 		<control id="103" type="list">
 			<include>HiddenHomeList</include>
-			<content limit="6" target="video">special://skin/extras/video/InProgressMovies.xsp</content>
+			<content limit="6" target="video">$VAR[MovieWidget3]</content>
 		</control>
 		<control id="104" type="list">
 			<include>HiddenHomeList</include>
-			<content limit="6" target="video">special://skin/extras/video/KidsMovies.xsp</content>
+			<content limit="6" target="video">$VAR[MovieWidget4]</content>
 		</control>
 		<control id="105" type="list">
 			<include>HiddenHomeList</include>
-			<content limit="6" target="video">special://skin/extras/video/ActionAdventureMovies.xsp</content>
+			<content limit="6" target="video">$VAR[MovieWidget5]</content>
 		</control>
 		<control id="106" type="list">
 			<include>HiddenHomeList</include>
-			<content limit="6" target="video">special://skin/extras/video/ComedyMovies.xsp</content>
+			<content limit="6" target="video">$VAR[MovieWidget6]</content>
 		</control>
 		<control id="107" type="list">
 			<include>HiddenHomeList</include>
-			<content limit="6" target="video">special://skin/extras/video/SciFiMovies.xsp</content>
+			<content limit="6" target="video">$VAR[MovieWidget7]</content>
 		</control>
 		<control id="108" type="list">
 			<include>HiddenHomeList</include>
-			<content limit="6" target="video">special://skin/extras/video/TopRatedMovies.xsp</content>
+			<content limit="6" target="video">$VAR[MovieWidget8]</content>
 		</control>
 		<!-- TV widgets -->
 		<control id="201" type="list">
 			<include>HiddenHomeList</include>
-			<content limit="6" target="video">special://skin/extras/video/RecentlyUpdatedTVShows.xsp</content>
+			<content limit="6" target="video">$VAR[TVWidget1]</content>
 		</control>
 		<control id="202" type="list">
 			<include>HiddenHomeList</include>
-			<content limit="6" target="video">special://skin/extras/video/YourTVShows.xsp</content>
+			<content limit="6" target="video">$VAR[TVWidget2]</content>
 		</control>
 		<control id="203" type="list">
 			<include>HiddenHomeList</include>
-			<content limit="6" target="video">special://skin/extras/video/InProgressTVShows.xsp</content>
+			<content limit="6" target="video">$VAR[TVWidget3]</content>
 		</control>
 		<control id="204" type="list">
 			<include>HiddenHomeList</include>
-			<content limit="6" target="video">special://skin/extras/video/KidsTVShows.xsp</content>
+			<content limit="6" target="video">$VAR[TVWidget4]</content>
 		</control>
 		<control id="205" type="list">
 			<include>HiddenHomeList</include>
-			<content limit="6" target="video">special://skin/extras/video/ActionAdventureTVShows.xsp</content>
+			<content limit="6" target="video">$VAR[TVWidget5]</content>
 		</control>
 		<control id="206" type="list">
 			<include>HiddenHomeList</include>
-			<content limit="6" target="video">special://skin/extras/video/ComedyTVShows.xsp</content>
+			<content limit="6" target="video">$VAR[TVWidget6]</content>
 		</control>
 		<control id="207" type="list">
 			<include>HiddenHomeList</include>
-			<content limit="6" target="video">special://skin/extras/video/SciFiTVShows.xsp</content>
+			<content limit="6" target="video">$VAR[TVWidget7]</content>
 		</control>
 		<control id="208" type="list">
 			<include>HiddenHomeList</include>
-			<content limit="6" target="video">special://skin/extras/video/TopRatedTVShows.xsp</content>
+			<content limit="6" target="video">$VAR[TVWidget8]</content>
 		</control>
 		<!-- Music widgets -->
 		<control id="301" type="list">
 			<include>HiddenHomeList</include>
-			<content limit="6" target="music">musicdb://recentlyplayedalbums/</content>
+			<content limit="6" target="music">$VAR[MusicWidget1]</content>
 		</control>
 		<control id="302" type="list">
 			<include>HiddenHomeList</include>
-			<content limit="6" target="music">special://skin/extras/music/YourAlbums.xsp</content>
+			<content limit="6" target="music">$VAR[MusicWidget2]</content>
 		</control>
 		<control id="303" type="list">
 			<include>HiddenHomeList</include>
-			<content limit="6" target="music">musicdb://recentlyaddedalbums/</content>
+			<content limit="6" target="music">$VAR[MusicWidget3]</content>
 		</control>
 		<control id="304" type="list">
 			<include>HiddenHomeList</include>
-			<content limit="6" target="music">special://skin/extras/music/YourArtists.xsp</content>
+			<content limit="6" target="music">$VAR[MusicWidget4]</content>
+		</control>
+		<control id="305" type="list">
+			<include>HiddenHomeList</include>
+			<content limit="6" target="music">$VAR[MusicWidget5]</content>
+		</control>
+		<control id="306" type="list">
+			<include>HiddenHomeList</include>
+			<content limit="6" target="music">$VAR[MusicWidget6]</content>
+		</control>
+		<control id="307" type="list">
+			<include>HiddenHomeList</include>
+			<content limit="6" target="music">$VAR[MusicWidget7]</content>
+		</control>
+		<control id="308" type="list">
+			<include>HiddenHomeList</include>
+			<content limit="6" target="music">$VAR[MusicWidget8]</content>
 		</control>
 		<!-- Main list -->
 		<control id="9000" type="list">
@@ -105,11 +121,11 @@
 			<onleft>noop</onleft>
 			<onright>ClearProperty(MainMenuFocus,home)</onright>
 			<onright condition="StringCompare(Container(9000).ListItem.Label,Movies) + IntegerGreaterThan(Container(100).NumItems,1)">SetFocus(100)</onright>
-			<onright condition="StringCompare(Container(9000).ListItem.Label,Movies) + StringCompare(Container(100).NumItems,1)">ActivateWindow(Videos,special://skin/extras/video/RecentlyAddedMovies.xsp,return)</onright>
+			<onright condition="StringCompare(Container(9000).ListItem.Label,Movies) + StringCompare(Container(100).NumItems,1)">ActivateWindow(Videos,$VAR[MovieWidget1],return)</onright>
 			<onright condition="StringCompare(Container(9000).ListItem.Label,TV Shows) + IntegerGreaterThan(Container(200).NumItems,1)">SetFocus(200)</onright>
-			<onright condition="StringCompare(Container(9000).ListItem.Label,TV Shows) + StringCompare(Container(200).NumItems,1)">ActivateWindow(Videos,special://skin/extras/video/RecentlyUpdatedTVShows.xsp,return)</onright>
+			<onright condition="StringCompare(Container(9000).ListItem.Label,TV Shows) + StringCompare(Container(200).NumItems,1)">ActivateWindow(Videos,$VAR[TVWidget1],return)</onright>
 			<onright condition="StringCompare(Container(9000).ListItem.Label,Music) + IntegerGreaterThan(Container(300).NumItems,1)">SetFocus(300)</onright>
-			<onright condition="StringCompare(Container(9000).ListItem.Label,Music) + StringCompare(Container(300).NumItems,1)">ActivateWindow(MusicLibrary,special://skin/extras/music/YourAlbums.xsp,return)</onright>
+			<onright condition="StringCompare(Container(9000).ListItem.Label,Music) + StringCompare(Container(300).NumItems,1)">ActivateWindow(MusicLibrary,$VAR[MusicWidget1],return)</onright>
 			<onright condition="StringCompare(Container(9000).ListItem.Label,Apps)">ActivateWindow(Programs,addons://sources/executable/,return)</onright>
 			<onright condition="StringCompare(Container(9000).ListItem.Label,Photos)">ActivateWindow(Pictures,addons://sources/image,return)</onright>
 			<onright condition="!StringCompare(Container(9000).ListItem.Label,Movies) + !StringCompare(Container(9000).ListItem.Label,TV Shows) + !StringCompare(Container(9000).ListItem.Label,Music) + !StringCompare(Container(9000).ListItem.Label,Apps) + !StringCompare(Container(9000).ListItem.Label,Photos)">Select</onright>
@@ -772,7 +788,7 @@
 					<property name="VideoResolution4">$INFO[Container(101).ListItemNoWrap(3).VideoResolution]</property>
 					<property name="VideoResolution5">$INFO[Container(101).ListItemNoWrap(4).VideoResolution]</property>
 					<property name="VideoResolution6">$INFO[Container(101).ListItemNoWrap(5).VideoResolution]</property>
-					<onclick>ActivateWindow(Videos,special://skin/extras/video/RecentlyAddedMovies.xsp,return)</onclick>
+					<onclick>ActivateWindow(Videos,$VAR[MovieWidget1],return)</onclick>
 				</item>
 				<item>
 					<label>Your Movies</label>
@@ -795,7 +811,7 @@
 					<property name="VideoResolution4">$INFO[Container(102).ListItemNoWrap(3).VideoResolution]</property>
 					<property name="VideoResolution5">$INFO[Container(102).ListItemNoWrap(4).VideoResolution]</property>
 					<property name="VideoResolution6">$INFO[Container(102).ListItemNoWrap(5).VideoResolution]</property>
-					<onclick>ActivateWindow(Videos,special://skin/extras/video/YourMovies.xsp,return)</onclick>
+					<onclick>ActivateWindow(Videos,$VAR[MovieWidget2],return)</onclick>
 				</item>
 				<item>
 					<label>In Progress Movies</label>
@@ -818,7 +834,7 @@
 					<property name="VideoResolution4">$INFO[Container(103).ListItemNoWrap(3).VideoResolution]</property>
 					<property name="VideoResolution5">$INFO[Container(103).ListItemNoWrap(4).VideoResolution]</property>
 					<property name="VideoResolution6">$INFO[Container(103).ListItemNoWrap(5).VideoResolution]</property>
-					<onclick>ActivateWindow(Videos,special://skin/extras/video/InProgressMovies.xsp,return)</onclick>
+					<onclick>ActivateWindow(Videos,$VAR[MovieWidget3],return)</onclick>
 				</item>
 				<item>
 					<label>Kids Movies</label>
@@ -841,7 +857,7 @@
 					<property name="VideoResolution4">$INFO[Container(104).ListItemNoWrap(3).VideoResolution]</property>
 					<property name="VideoResolution5">$INFO[Container(104).ListItemNoWrap(4).VideoResolution]</property>
 					<property name="VideoResolution6">$INFO[Container(104).ListItemNoWrap(5).VideoResolution]</property>
-					<onclick>ActivateWindow(Videos,special://skin/extras/video/KidsMovies.xsp,return)</onclick>
+					<onclick>ActivateWindow(Videos,$VAR[MovieWidget4],return)</onclick>
 				</item>
 				<item>
 					<label>Action &amp; Adventure Movies</label>
@@ -864,7 +880,7 @@
 					<property name="VideoResolution4">$INFO[Container(105).ListItemNoWrap(3).VideoResolution]</property>
 					<property name="VideoResolution5">$INFO[Container(105).ListItemNoWrap(4).VideoResolution]</property>
 					<property name="VideoResolution6">$INFO[Container(105).ListItemNoWrap(5).VideoResolution]</property>
-					<onclick>ActivateWindow(Videos,special://skin/extras/video/ActionAdventureMovies.xsp,return)</onclick>
+					<onclick>ActivateWindow(Videos,$VAR[MovieWidget5],return)</onclick>
 				</item>
 				<item>
 					<label>Comedy Movies</label>
@@ -887,7 +903,7 @@
 					<property name="VideoResolution4">$INFO[Container(106).ListItemNoWrap(3).VideoResolution]</property>
 					<property name="VideoResolution5">$INFO[Container(106).ListItemNoWrap(4).VideoResolution]</property>
 					<property name="VideoResolution6">$INFO[Container(106).ListItemNoWrap(5).VideoResolution]</property>
-					<onclick>ActivateWindow(Videos,special://skin/extras/video/ComedyMovies.xsp,return)</onclick>
+					<onclick>ActivateWindow(Videos,$VAR[MovieWidget6],return)</onclick>
 				</item>
 				<item>
 					<label>Sci-Fi Movies</label>
@@ -910,7 +926,7 @@
 					<property name="VideoResolution4">$INFO[Container(107).ListItemNoWrap(3).VideoResolution]</property>
 					<property name="VideoResolution5">$INFO[Container(107).ListItemNoWrap(4).VideoResolution]</property>
 					<property name="VideoResolution6">$INFO[Container(107).ListItemNoWrap(5).VideoResolution]</property>
-					<onclick>ActivateWindow(Videos,special://skin/extras/video/SciFiMovies.xsp,return)</onclick>
+					<onclick>ActivateWindow(Videos,$VAR[MovieWidget7],return)</onclick>
 				</item>
 				<item>
 					<label>Top Rated Movies</label>
@@ -933,7 +949,7 @@
 					<property name="VideoResolution4">$INFO[Container(108).ListItemNoWrap(3).VideoResolution]</property>
 					<property name="VideoResolution5">$INFO[Container(108).ListItemNoWrap(4).VideoResolution]</property>
 					<property name="VideoResolution6">$INFO[Container(108).ListItemNoWrap(5).VideoResolution]</property>
-					<onclick>ActivateWindow(Videos,special://skin/extras/video/TopRatedMovies.xsp,return)</onclick>
+					<onclick>ActivateWindow(Videos,$VAR[MovieWidget8],return)</onclick>
 				</item>
 			</content>
 		</control>
@@ -997,7 +1013,7 @@
 					<property name="ArtLogo1">$INFO[Container(201).ListItemNoWrap(0).Art(clearlogo)]</property>
 					<property name="ArtLogo2">$INFO[Container(201).ListItemNoWrap(1).Art(clearlogo)]</property>
 					<property name="ArtLogo3">$INFO[Container(201).ListItemNoWrap(2).Art(clearlogo)]</property>
-					<onclick>ActivateWindow(Videos,special://skin/extras/video/RecentlyUpdatedTVShows.xsp,return)</onclick>
+					<onclick>ActivateWindow(Videos,$VAR[TVWidget1],return)</onclick>
 				</item>
 				<item>
 					<label>Your TV Shows</label>
@@ -1029,7 +1045,7 @@
 					<property name="ArtLogo1">$INFO[Container(202).ListItemNoWrap(0).Art(clearlogo)]</property>
 					<property name="ArtLogo2">$INFO[Container(202).ListItemNoWrap(1).Art(clearlogo)]</property>
 					<property name="ArtLogo3">$INFO[Container(202).ListItemNoWrap(2).Art(clearlogo)]</property>
-					<onclick>ActivateWindow(Videos,special://skin/extras/video/YourTVShows.xsp,return)</onclick>
+					<onclick>ActivateWindow(Videos,$VAR[TVWidget2],return)</onclick>
 				</item>
 				<item>
 					<label>In Progress TV Shows</label>
@@ -1061,7 +1077,7 @@
 					<property name="ArtLogo1">$INFO[Container(203).ListItemNoWrap(0).Art(clearlogo)]</property>
 					<property name="ArtLogo2">$INFO[Container(203).ListItemNoWrap(1).Art(clearlogo)]</property>
 					<property name="ArtLogo3">$INFO[Container(203).ListItemNoWrap(2).Art(clearlogo)]</property>
-					<onclick>ActivateWindow(Videos,special://skin/extras/video/InProgressTVShows.xsp,return)</onclick>
+					<onclick>ActivateWindow(Videos,$VAR[TVWidget3],return)</onclick>
 				</item>
 				<item>
 					<label>Kids TV Shows</label>
@@ -1093,7 +1109,7 @@
 					<property name="ArtLogo1">$INFO[Container(204).ListItemNoWrap(0).Art(clearlogo)]</property>
 					<property name="ArtLogo2">$INFO[Container(204).ListItemNoWrap(1).Art(clearlogo)]</property>
 					<property name="ArtLogo3">$INFO[Container(204).ListItemNoWrap(2).Art(clearlogo)]</property>
-					<onclick>ActivateWindow(Videos,special://skin/extras/video/KidsTVShows.xsp,return)</onclick>
+					<onclick>ActivateWindow(Videos,$VAR[TVWidget4],return)</onclick>
 				</item>
 				<item>
 					<label>Action &amp; Adventure TV Shows</label>
@@ -1125,7 +1141,7 @@
 					<property name="ArtLogo1">$INFO[Container(205).ListItemNoWrap(0).Art(clearlogo)]</property>
 					<property name="ArtLogo2">$INFO[Container(205).ListItemNoWrap(1).Art(clearlogo)]</property>
 					<property name="ArtLogo3">$INFO[Container(205).ListItemNoWrap(2).Art(clearlogo)]</property>
-					<onclick>ActivateWindow(Videos,special://skin/extras/video/ActionAdventureTVShows.xsp,return)</onclick>
+					<onclick>ActivateWindow(Videos,$VAR[TVWidget5],return)</onclick>
 				</item>
 				<item>
 					<label>Comedy TV Shows</label>
@@ -1157,7 +1173,7 @@
 					<property name="ArtLogo1">$INFO[Container(206).ListItemNoWrap(0).Art(clearlogo)]</property>
 					<property name="ArtLogo2">$INFO[Container(206).ListItemNoWrap(1).Art(clearlogo)]</property>
 					<property name="ArtLogo3">$INFO[Container(206).ListItemNoWrap(2).Art(clearlogo)]</property>
-					<onclick>ActivateWindow(Videos,special://skin/extras/video/ComedyTVShows.xsp,return)</onclick>
+					<onclick>ActivateWindow(Videos,$VAR[TVWidget6],return)</onclick>
 				</item>
 				<item>
 					<label>Sci-Fi TV Shows</label>
@@ -1189,7 +1205,7 @@
 					<property name="ArtLogo1">$INFO[Container(207).ListItemNoWrap(0).Art(clearlogo)]</property>
 					<property name="ArtLogo2">$INFO[Container(207).ListItemNoWrap(1).Art(clearlogo)]</property>
 					<property name="ArtLogo3">$INFO[Container(207).ListItemNoWrap(2).Art(clearlogo)]</property>
-					<onclick>ActivateWindow(Videos,special://skin/extras/video/SciFiTVShows.xsp,return)</onclick>
+					<onclick>ActivateWindow(Videos,$VAR[TVWidget7],return)</onclick>
 				</item>
 				<item>
 					<label>Top Rated TV Shows</label>
@@ -1221,7 +1237,7 @@
 					<property name="ArtLogo1">$INFO[Container(208).ListItemNoWrap(0).Art(clearlogo)]</property>
 					<property name="ArtLogo2">$INFO[Container(208).ListItemNoWrap(1).Art(clearlogo)]</property>
 					<property name="ArtLogo3">$INFO[Container(208).ListItemNoWrap(2).Art(clearlogo)]</property>
-					<onclick>ActivateWindow(Videos,special://skin/extras/video/TopRatedTVShows.xsp,return)</onclick>
+					<onclick>ActivateWindow(Videos,$VAR[TVWidget8],return)</onclick>
 				</item>
 			</content>
 		</control>
@@ -1820,7 +1836,7 @@
 					<property name="Album1_2">$INFO[Container(301).ListItemNoWrap(1).Album]</property>
 					<property name="Album1_3">$INFO[Container(301).ListItemNoWrap(2).Album]</property>
 					<property name="Album1_4">$INFO[Container(301).ListItemNoWrap(3).Album]</property>
-					<onclick>ActivateWindow(MusicLibrary,musicdb://recentlyplayedalbums/,return)</onclick>
+					<onclick>ActivateWindow(MusicLibrary,$VAR[MusicWidget1],return)</onclick>
 				</item>
 				<item>
 					<label>Your Albums</label>
@@ -1837,7 +1853,7 @@
 					<property name="Album1_2">$INFO[Container(302).ListItemNoWrap(1).Album]</property>
 					<property name="Album1_3">$INFO[Container(302).ListItemNoWrap(2).Album]</property>
 					<property name="Album1_4">$INFO[Container(302).ListItemNoWrap(3).Album]</property>
-					<onclick>ActivateWindow(MusicLibrary,special://skin/extras/music/YourAlbums.xsp,return)</onclick>
+					<onclick>ActivateWindow(MusicLibrary,$VAR[MusicWidget2],return)</onclick>
 				</item>
 				<item>
 					<label>Recently Added Albums</label>
@@ -1854,7 +1870,7 @@
 					<property name="Album1_2">$INFO[Container(303).ListItemNoWrap(1).Album]</property>
 					<property name="Album1_3">$INFO[Container(303).ListItemNoWrap(2).Album]</property>
 					<property name="Album1_4">$INFO[Container(303).ListItemNoWrap(3).Album]</property>
-					<onclick>ActivateWindow(MusicLibrary,musicdb://recentlyaddedalbums/,return)</onclick>
+					<onclick>ActivateWindow(MusicLibrary,$VAR[MusicWidget3],return)</onclick>
 				</item>
 				<item>
 					<label>Your Artists</label>
@@ -1871,7 +1887,75 @@
 					<property name="Album1_2">$INFO[Container(304).ListItemNoWrap(1).Album]</property>
 					<property name="Album1_3">$INFO[Container(304).ListItemNoWrap(2).Album]</property>
 					<property name="Album1_4">$INFO[Container(304).ListItemNoWrap(3).Album]</property>
-					<onclick>ActivateWindow(MusicLibrary,special://skin/extras/music/YourArtists.xsp,return)</onclick>
+					<onclick>ActivateWindow(MusicLibrary,$VAR[MusicWidget4],return)</onclick>
+				</item>
+				<item>
+					<label>Your Genres</label>
+					<visible>!IsEmpty(Container(305).ListItemNoWrap(0).Icon)</visible>
+					<property name="Icon1">$INFO[Container(305).ListItemNoWrap(0).Icon]</property>
+					<property name="Icon2">$INFO[Container(305).ListItemNoWrap(1).Icon]</property>
+					<property name="Icon3">$INFO[Container(305).ListItemNoWrap(2).Icon]</property>
+					<property name="Icon4">$INFO[Container(305).ListItemNoWrap(3).Icon]</property>
+					<property name="Label1_1">$INFO[Container(305).ListItemNoWrap(0).Label]</property>
+					<property name="Label1_2">$INFO[Container(305).ListItemNoWrap(1).Label]</property>
+					<property name="Label1_3">$INFO[Container(305).ListItemNoWrap(2).Label]</property>
+					<property name="Label1_4">$INFO[Container(305).ListItemNoWrap(3).Label]</property>
+					<property name="Album1_1">$INFO[Container(305).ListItemNoWrap(0).Album]</property>
+					<property name="Album1_2">$INFO[Container(305).ListItemNoWrap(1).Album]</property>
+					<property name="Album1_3">$INFO[Container(305).ListItemNoWrap(2).Album]</property>
+					<property name="Album1_4">$INFO[Container(305).ListItemNoWrap(3).Album]</property>
+					<onclick>ActivateWindow(MusicLibrary,$VAR[MusicWidget5],return)</onclick>
+				</item>
+				<item>
+					<label>Top Rated Albums</label>
+					<visible>!IsEmpty(Container(306).ListItemNoWrap(0).Icon)</visible>
+					<property name="Icon1">$INFO[Container(306).ListItemNoWrap(0).Icon]</property>
+					<property name="Icon2">$INFO[Container(306).ListItemNoWrap(1).Icon]</property>
+					<property name="Icon3">$INFO[Container(306).ListItemNoWrap(2).Icon]</property>
+					<property name="Icon4">$INFO[Container(306).ListItemNoWrap(3).Icon]</property>
+					<property name="Label1_1">$INFO[Container(306).ListItemNoWrap(0).Label]</property>
+					<property name="Label1_2">$INFO[Container(306).ListItemNoWrap(1).Label]</property>
+					<property name="Label1_3">$INFO[Container(306).ListItemNoWrap(2).Label]</property>
+					<property name="Label1_4">$INFO[Container(306).ListItemNoWrap(3).Label]</property>
+					<property name="Album1_1">$INFO[Container(306).ListItemNoWrap(0).Album]</property>
+					<property name="Album1_2">$INFO[Container(306).ListItemNoWrap(1).Album]</property>
+					<property name="Album1_3">$INFO[Container(306).ListItemNoWrap(2).Album]</property>
+					<property name="Album1_4">$INFO[Container(306).ListItemNoWrap(3).Album]</property>
+					<onclick>ActivateWindow(MusicLibrary,$VAR[MusicWidget6],return)</onclick>
+				</item>
+				<item>
+					<label>Top Rated Songs</label>
+					<visible>!IsEmpty(Container(307).ListItemNoWrap(0).Icon)</visible>
+					<property name="Icon1">$INFO[Container(307).ListItemNoWrap(0).Icon]</property>
+					<property name="Icon2">$INFO[Container(307).ListItemNoWrap(1).Icon]</property>
+					<property name="Icon3">$INFO[Container(307).ListItemNoWrap(2).Icon]</property>
+					<property name="Icon4">$INFO[Container(307).ListItemNoWrap(3).Icon]</property>
+					<property name="Label1_1">$INFO[Container(307).ListItemNoWrap(0).Label]</property>
+					<property name="Label1_2">$INFO[Container(307).ListItemNoWrap(1).Label]</property>
+					<property name="Label1_3">$INFO[Container(307).ListItemNoWrap(2).Label]</property>
+					<property name="Label1_4">$INFO[Container(307).ListItemNoWrap(3).Label]</property>
+					<property name="Album1_1">$INFO[Container(307).ListItemNoWrap(0).Album]</property>
+					<property name="Album1_2">$INFO[Container(307).ListItemNoWrap(1).Album]</property>
+					<property name="Album1_3">$INFO[Container(307).ListItemNoWrap(2).Album]</property>
+					<property name="Album1_4">$INFO[Container(307).ListItemNoWrap(3).Album]</property>
+					<onclick>ActivateWindow(MusicLibrary,$VAR[MusicWidget7],return)</onclick>
+				</item>
+				<item>
+					<label>Your Songs</label>
+					<visible>!IsEmpty(Container(308).ListItemNoWrap(0).Icon)</visible>
+					<property name="Icon1">$INFO[Container(308).ListItemNoWrap(0).Icon]</property>
+					<property name="Icon2">$INFO[Container(308).ListItemNoWrap(1).Icon]</property>
+					<property name="Icon3">$INFO[Container(308).ListItemNoWrap(2).Icon]</property>
+					<property name="Icon4">$INFO[Container(308).ListItemNoWrap(3).Icon]</property>
+					<property name="Label1_1">$INFO[Container(308).ListItemNoWrap(0).Label]</property>
+					<property name="Label1_2">$INFO[Container(308).ListItemNoWrap(1).Label]</property>
+					<property name="Label1_3">$INFO[Container(308).ListItemNoWrap(2).Label]</property>
+					<property name="Label1_4">$INFO[Container(308).ListItemNoWrap(3).Label]</property>
+					<property name="Album1_1">$INFO[Container(308).ListItemNoWrap(0).Album]</property>
+					<property name="Album1_2">$INFO[Container(308).ListItemNoWrap(1).Album]</property>
+					<property name="Album1_3">$INFO[Container(308).ListItemNoWrap(2).Album]</property>
+					<property name="Album1_4">$INFO[Container(308).ListItemNoWrap(3).Album]</property>
+					<onclick>ActivateWindow(MusicLibrary,$VAR[MusicWidget8],return)</onclick>
 				</item>
 			</content>
 		</control>

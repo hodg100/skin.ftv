@@ -413,7 +413,7 @@
 					<onclick>Skin.ToggleSetting(DebugGrid)</onclick>
 					<selected>Skin.HasSetting(DebugGrid)</selected>
 				</control>
-				<control id="17" type="radiobutton">
+				<control id="22" type="radiobutton">
 					<width>958</width>
 					<height>84</height>
 					<font>Light32</font>
