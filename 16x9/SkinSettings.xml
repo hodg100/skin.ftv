@@ -304,7 +304,7 @@
 					<width>958</width>
 					<height>84</height>
 					<font>Light32</font>
-					<label>Enable Wide TV Show and Season Icons</label>
+					<label>Enable Wide TV Show Icons</label>
 					<textoffsetx>40</textoffsetx>
 					<textcolor>ff505153</textcolor>
 					<focusedcolor>ffffaf37</focusedcolor>
@@ -332,6 +332,26 @@
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<onclick>XBMC.runscript(script.artwork.downloader, mode=custom, mediatype=tvshow, silent=true, clearlogo)</onclick>
 					<visible>Skin.HasSetting(WideTVShowArt)</visible>
+				</control>
+				<control id="17" type="radiobutton">
+					<width>958</width>
+					<height>84</height>
+					<font>Light32</font>
+					<label>Enable Wide Season Icons</label>
+					<textoffsetx>40</textoffsetx>
+					<textcolor>ff505153</textcolor>
+					<focusedcolor>ffffaf37</focusedcolor>
+					<radiowidth>125</radiowidth>
+					<radioheight>53</radioheight>
+					<radioposx>813</radioposx>
+					<textureradioonfocus>settings/radio_on_focus.png</textureradioonfocus>
+					<textureradioonnofocus>settings/radio_on_no_focus.png</textureradioonnofocus>
+					<textureradioofffocus>settings/radio_off_focus.png</textureradioofffocus>
+					<textureradiooffnofocus>settings/radio_off_no_focus.png</textureradiooffnofocus>
+					<texturefocus border="3">settings/button_focus.png</texturefocus>
+					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+					<onclick>Skin.ToggleSetting(WideSeasonArt)</onclick>
+					<selected>Skin.HasSetting(WideSeasonArt)</selected>
 				</control>
 				<control id="15" type="radiobutton">
 					<width>958</width>

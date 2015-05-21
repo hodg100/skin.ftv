@@ -427,6 +427,7 @@
 		<value condition="ControlGroup(9).HasFocus(11)">Customise the shutdown menu to include your favourite actions.</value>
 		<value condition="ControlGroup(9).HasFocus(12)">Hide thumbnails for unwatched episodes to avoid possible spoilers.</value>
 		<value condition="ControlGroup(9).HasFocus(13)">Uses a combination of Fanart and Logo to display wide icons.[CR]Alternatively create and add your own as 'ftv' artwork.</value>
+		<value condition="ControlGroup(9).HasFocus(17)">Uses a combination of Fanart and Logo to display wide icons.[CR]Alternatively create and add your own as 'ftv' artwork.</value>
 		<value condition="ControlGroup(9).HasFocus(14)">Runs Artwork Downloader in the background to fetch TV Show logos needed for wide icons.</value>
 		<value condition="ControlGroup(9).HasFocus(15)">Displays fanart for your media in the background.</value>
 		<value condition="ControlGroup(9).HasFocus(16)">Select your scrapers preferred certification county.</value>
@@ -514,7 +515,7 @@
 	</variable>
 	<variable name="WideImage">
 		<value condition="StringCompare(ListItem.Label,..)">views/folder_back_wide.png</value>
-		<value condition="Container.Content(episodes) + !IsEmpty(ListItem.Art(thumb)) + [!Skin.HasSetting(HideUnwatchedThumbs) | [Skin.HasSetting(HideUnwatchedThumbs) + StringCompare(ListItem.Overlay,OverlayWatched.png)]]">$INFO[ListItem.Art(thumb)]</value>
+		<value condition="Container.Content(episodes) + !IsEmpty(ListItem.Art(thumb)) + [!Skin.HasSetting(HideUnwatchedThumbs) | [Skin.HasSetting(HideUnwatchedThumbs) + StringCompare(ListItem.DBID,-1)] | [Skin.HasSetting(HideUnwatchedThumbs) + StringCompare(ListItem.Overlay,OverlayWatched.png)]]">$INFO[ListItem.Art(thumb)]</value>
 		<value condition="Container.Content(episodes) + !IsEmpty(ListItem.Art(fanart)) + [IsEmpty(ListItem.Art(thumb)) | [Skin.HasSetting(HideUnwatchedThumbs) + !StringCompare(ListItem.Overlay,OverlayWatched.png)]]">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
 		<value>views/episode_fallback.png</value>
@@ -1948,6 +1949,7 @@
 		<value condition="SubString(Player.SeekOffset,59:)">59m</value>
 	</variable>
 	<variable name="PlayerEpisodeValue">
+		<value condition="IsEmpty(VideoPlayer.TVShowTitle)">$INFO[VideoPlayer.Label]</value>
 		<value condition="!SubString(VideoPlayer.Episode,s) + !IsEmpty(VideoPlayer.Season) + !IsEmpty(VideoPlayer.Episode)">$INFO[VideoPlayer.Season, $LOCALIZE[20373] ,], $INFO[VideoPlayer.Episode,$LOCALIZE[20359] ]</value>
 		<value condition="!SubString(VideoPlayer.Episode,s) + !IsEmpty(VideoPlayer.Episode)">$INFO[VideoPlayer.Episode,$LOCALIZE[20359] ]</value>
 		<value condition="SubString(VideoPlayer.Episode,s0,right)"> Special, $LOCALIZE[20359] 0</value>
@@ -2352,6 +2354,7 @@
 		<value condition="SubString(VideoPlayer.Episode,s399,right)"> Special, $LOCALIZE[20359] 399</value>
 	</variable>
 	<variable name="EpisodeValue">
+		<value condition="StringCompare(ListItem.DBID,-1)">$INFO[ListItem.Label]</value>
 		<value condition="!SubString(ListItem.Episode,s) + !IsEmpty(ListItem.Season) + !IsEmpty(ListItem.Episode)">$INFO[ListItem.Season,$LOCALIZE[20373] , ]$INFO[ListItem.Episode,$LOCALIZE[20359] ]</value>
 		<value condition="!SubString(ListItem.Episode,s) + !IsEmpty(ListItem.Episode)">$INFO[ListItem.Episode,$LOCALIZE[20359] ]</value>
 		<value condition="SubString(ListItem.Episode,s0,right)">Special $LOCALIZE[20359] 0</value>
